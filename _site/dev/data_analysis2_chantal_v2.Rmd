@@ -1,0 +1,368 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=F, warning=F)
+```
+
+
+
+```{r results='hide'}
+rm(list=ls())
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(zoo)
+library(ggthemes)
+library(RColorBrewer)
+library(scales)
+library(reshape2)
+library(gridExtra)
+library(rmapzen)
+library(leaflet)
+library(treemap)
+library(reshape2)
+
+setClass("empty.is.NA")
+setAs("character", "empty.is.NA", 
+      function(from) replace(as.character(from), from == "", NA))
+
+df <- read.csv("/Users/lucienbaumgartner/Downloads/Excel Case.xlsx - Blatt1.csv", stringsAsFactors=F, header=T, colClasses = "empty.is.NA")
+
+
+repl_NA <- function (x) gsub("N/A", NA, df[,x])
+vec <- c()
+for (i in 1:length(df)) vec[i] <- !length(grep("N/A", df[,i]))==0
+df[,vec]<- sapply(grep(TRUE, vec), repl_NA)
+
+# transform dates 
+date.col <- grep(paste0(c("date", "Date"), collapse="|"), colnames(df), value = T)
+place.list <- list()
+
+for (i in 1:length(date.col)) {
+  placeholder <- c()
+  date.vec <- df[,date.col[i]]
+  for (m in 1:length(date.vec)){
+    dat <- date.vec[m]
+    if(grepl("[A-z]", dat)){placeholder[m] <- format(as.Date(as.yearmon(dat), format="%b%Y"), "%Y-%m-%d")}else{
+      placeholder[m] <- format(dmy(dat), "%Y-%m-%d")
+    }
+  }
+  place.list[[i]] <- placeholder
+}
+dates <- do.call(cbind, place.list) %>% as.data.frame()
+
+# transform from chars to dates
+for (i in 1:length(dates)) dates[,i] <- as.Date(as.character(dates[,i]), "%Y-%m-%d")
+# now lets check if there are new NAs that have been created:
+colnames(dates) <- date.col
+check.log <-list()
+for (i in 1:length(date.col)){
+  k <- date.col[i]
+  check.log[[i]] <- is.na(df[,k]) == is.na(dates[,k])
+} 
+
+for (i in 1:length(check.log)) print(table(check.log[[i]]))
+
+for (i in 1: length(check.log)) print(df %>% filter(check.log[[i]]==FALSE) %>% select(Date.of.Incident.dd.mm.yy.))
+
+for (i in date.col) df[, i] <- dates[, i]
+
+# df$Date.of.Incident.dd.mm.yy.[!check.log[[1]]] <- as.Date(as.yearmon("February 2014"), format="%b%Y")
+
+
+# transform categorical vars to factors
+df <- df %>% mutate(Name.of.Security.Agency=gsub('Military|AMISOM', 'KDF', Name.of.Security.Agency),
+                    Name.of.Security.Agency=gsub('OCS', 'Police', Name.of.Security.Agency),
+                    Name.of.Security.Agency=gsub('AdiminstrationPolice|AdministrativePolice', 'AdministrationPolice', Name.of.Security.Agency),
+                    KDF=ifelse(grepl("KDF", Name.of.Security.Agency), 1, 0),
+                    BPU=ifelse(grepl('BPU', Name.of.Security.Agency), 1, 0),
+                    KPR=ifelse(grepl('KPR', Name.of.Security.Agency), 1, 0),
+                    ADMINPOL=ifelse(grepl('AdministrationPolice', Name.of.Security.Agency), 1, 0),
+                    POLICE=ifelse(grepl("Police", Name.of.Security.Agency), 1, 0),
+                    ATPU=ifelse(grepl("ATPU", Name.of.Security.Agency), 1, 0),
+                    KWEKWE=ifelse(grepl("Kwekwe", Name.of.Security.Agency), 1, 0),
+                    CID=ifelse(grepl("CID", Name.of.Security.Agency), 1, 0),
+                    KWS=ifelse(grepl("KWS", Name.of.Security.Agency), 1, 0),
+                    NIS=ifelse(grepl("NIS", Name.of.Security.Agency), 1, 0),
+                    GSU=ifelse(grepl("GSU", Name.of.Security.Agency), 1, 0),
+                    ATPU=ifelse(grepl("ATP", Name.of.Security.Agency), 1, 0),
+                    RDU=ifelse(grepl("RDU", Name.of.Security.Agency), 1, 0),
+                    RPBU=ifelse(grepl('RPBU', Name.of.Security.Agency), 1, 0),
+                    Gender=ifelse(Gender=="M ", "M", Gender),
+                    Gender=ifelse(Gender=="N/a", NA, Gender)) %>%
+  mutate_at(c('KDF', 'POLICE', 'ATPU', 'KWEKWE', 'CID',
+              'KWS', 'NIS', 'GSU'), 
+            funs(ifelse(is.na(Name.of.Security.Agency), NA, .))) %>% 
+  select(-c(Religion..Muslim...1..other..0..unknown.2.))
+
+fctr.col <- grep(paste0(c("0", "Location", "Occupation", 
+                          "Name.of.Security.Agency", "Name.of.Coder"), collapse="|"), colnames(df), value = T)
+for (i in 1:length(fctr.col)) df[,fctr.col[i]] <- as.factor(df[, fctr.col[i]])
+
+df <- as_tibble(df) %>% 
+  setNames(., colnames(.) %>% 
+             strsplit(., "\\.\\.") %>%
+             sapply('[[',1))
+
+summary(df)
+colnames(df)[7:9] <- c("Location.county", "Location.city", "Location.neighbourhood")
+
+df.x <- df %>% 
+  filter(Date.of.Incident.dd.mm.yy. > ymd("2010-12-31")) %>%
+  mutate(Religion=as.character(Religion),
+         Religion=ifelse(Religion=='3', NA, Religion),
+         Religion=factor(Religion),
+         Suspected.of.Terrorism.Related.Activities=as.character(Suspected.of.Terrorism.Related.Activities),
+         Suspected.of.Terrorism.Related.Activities=ifelse(Suspected.of.Terrorism.Related.Activities=='0', "No", Suspected.of.Terrorism.Related.Activities),
+         Suspected.of.Terrorism.Related.Activities=ifelse(Suspected.of.Terrorism.Related.Activities=='1', "Yes", Suspected.of.Terrorism.Related.Activities),
+         Suspected.of.Terrorism.Related.Activities=ifelse(Suspected.of.Terrorism.Related.Activities=='2', NA, Suspected.of.Terrorism.Related.Activities),
+         Suspected.of.Terrorism.Related.Activities=as.character(Suspected.of.Terrorism.Related.Activities),
+         Enforced.Disappearances=as.character(Enforced.Disappearances),
+         Enforced.Disappearances=ifelse(Enforced.Disappearances=='0', "No", Enforced.Disappearances),
+         Enforced.Disappearances=ifelse(Enforced.Disappearances=='1', "Yes", Enforced.Disappearances),
+         Enforced.Disappearances=ifelse(Enforced.Disappearances=='2', NA, Enforced.Disappearances),
+         Extrajudicial.Killing=as.character(Extrajudicial.Killing),
+         Extrajudicial.Killing=ifelse(Extrajudicial.Killing=='0', "No", Extrajudicial.Killing),
+         Extrajudicial.Killing=ifelse(Extrajudicial.Killing=='1', "Yes", Extrajudicial.Killing),
+         Extrajudicial.Killing=ifelse(Extrajudicial.Killing=='2', NA, Extrajudicial.Killing),
+         Location.city=as.character(Location.city),
+         Location.city=ifelse(Location.city=='Athi River junction', 'Arthi River junction', Location.city))
+levels(df.x$Religion) <- c('Not Muslim', 'Muslim', 'Muslim Name')
+```
+
+
+```{r}
+
+#load('/Users/lucienbaumgartner/Documents/CAPPY/data2.RData')
+```
+
+```{r}
+
+# Number/Proportion of Muslims¨
+table(df.x$Religion, useNA = 'ifany')
+
+# Gender
+table(df.x$Gender, useNA = 'ifany')
+
+# muslim ~ terrorism
+ggplot(df.x, aes(x=Suspected.of.Terrorism.Related.Activities, 
+                 y=..count.., 
+                 fill=Suspected.of.Terrorism.Related.Activities)) + 
+  geom_bar() + 
+  facet_wrap(~Religion, nrow=1) +
+  ggtitle("muslim ~ terrorism [counts]")
+
+# proportions victim groups
+df.x %>%
+  group_by(Gender) %>%
+  summarise(n=n()) %>%
+  mutate(perc=n/sum(n)*100) 
+
+# muslim ~ enforced disapp
+ggplot(df.x, aes(x=Enforced.Disappearances, 
+                 y=..count.., 
+                 fill=Enforced.Disappearances)) + 
+  geom_bar() + 
+  facet_wrap(~Religion, nrow=1) +
+  ggtitle("muslim ~ enforced disappereances [counts]")
+
+# gender ~ enforced disapp
+ggplot(df.x, aes(x=Enforced.Disappearances, 
+                 y=..count.., 
+                 fill=Enforced.Disappearances)) + 
+  geom_bar() + 
+  facet_wrap(~Gender, nrow=1) +
+  ggtitle("gender ~ enforced disappereances [counts]")
+
+
+# muslim ~ killings
+ggplot(df.x, aes(x=Extrajudicial.Killing, 
+                 y=..count.., 
+                 fill=Extrajudicial.Killing)) + 
+  geom_bar() + 
+  facet_wrap(~Religion, nrow=1) +
+  ggtitle("muslim ~ ExtraJudicKills [counts]")
+
+# gender ~ killings
+ggplot(df.x, aes(x=Extrajudicial.Killing, 
+                 y=..count.., 
+                 fill=Extrajudicial.Killing)) + 
+  geom_bar() + 
+  facet_wrap(~Gender, nrow=1) +
+  ggtitle("gender ~ ExtraJudicKills [counts]")
+
+# n cases per city
+df.x %>%
+  group_by(Location.city) %>%
+  summarise(n=n()) %>%
+  arrange(desc(n)) %>%
+  top_n(n=10, wt=n) 
+
+# n counter-terror ops
+table(df.x$Counter.Terrorism.Act, useNA = 'ifany')
+
+# n susp terrorists
+table(df.x$Suspected.of.Terrorism.Related.Activities, useNA = 'ifany')
+
+# muslim ~ killings
+ggplot(df.x, aes(x=Extrajudicial.Killing, 
+                 y=..count.., 
+                 fill=Extrajudicial.Killing)) + 
+  geom_bar() + 
+  facet_wrap(~Suspected.of.Terrorism.Related.Activities, nrow=1) +
+  ggtitle("suspected ~ ExtraJudicKills [counts]")
+
+# gender ~ killings
+ggplot(df.x, aes(x=Enforced.Disappearances, 
+                 y=..count.., 
+                 fill=Enforced.Disappearances)) + 
+  geom_bar() + 
+  facet_wrap(~Suspected.of.Terrorism.Related.Activities, nrow=1) +
+  ggtitle("suspected ~ enforced disappereances [counts]")
+
+# different police units
+unique(df.x$Name.of.Security.Agency) %>%
+  gsub(', ', '/', .) %>%
+  gsub('\\s', '', .) %>%
+  strsplit(., '/') %>% 
+  unlist %>%
+  unique %>%
+  sort
+
+
+```
+```{r fig.height=12, fig.width=12}
+# regional distribution of police units
+
+library(reshape2)
+
+df.x <- df.x %>%
+  mutate(BPU_RPBU=ifelse(BPU==1 | RPBU==1, 1, 0))
+
+df.x %>%
+  select(c(Location.city,
+           ATPU,
+           CID,
+           NIS,
+           KWS,
+           POLICE,
+           GSU,
+           KDF, 
+           ADMINPOL,
+           KPR,
+           KPR, 
+           RDU,
+           BPU_RPBU)) %>%
+  melt(id.var='Location.city') %>%
+  filter(value==1) %>%
+  ggplot(., aes(x=Location.city, y=variable)) +
+    geom_count(aes(colour=variable)) -> q
+
+df.x %>%
+  select(c(Location.city,
+           ATPU,
+           CID,
+           NIS,
+           KWS,
+           POLICE,
+           GSU,
+           KDF, 
+           ADMINPOL,
+           KPR,
+           KPR, 
+           RDU, 
+           BPU_RPBU)) %>%
+  melt(id.var='Location.city') %>%
+  filter(value==1) %>%
+  group_by(Location.city, variable) %>%
+  summarise(n=n()) -> kx
+
+q + 
+  geom_text(data=kx, aes(label=n), vjust=-0.5, hjust=-0.5, size=3) +
+  coord_flip() +
+  ggtitle('regional distribution of police units')
+
+# Difference between police treatment of victims „suspected of terror-related activities“ 
+df.x %>%
+  select(c(Extrajudicial.Killing,
+           Suspected.of.Terrorism.Related.Activities,
+           ATPU,
+           CID,
+           NIS,
+           KWS,
+           POLICE,
+           GSU,
+           KDF, 
+           ADMINPOL,
+           KPR,
+           KPR, 
+           RDU, 
+           BPU_RPBU)) %>%
+  melt(id.var=c('Extrajudicial.Killing',
+                'Suspected.of.Terrorism.Related.Activities')) %>%
+  filter(value==1) %>%
+  ggplot(., aes(x=Extrajudicial.Killing, 
+                y=..count.., 
+                fill=Extrajudicial.Killing)) + 
+  geom_bar() + 
+  facet_grid(Suspected.of.Terrorism.Related.Activities~variable) +
+  ggtitle("ExtraJudicKills: police units ~ suspected terror. [counts]")
+
+df.x %>%
+  select(c(Enforced.Disappearances,
+           Suspected.of.Terrorism.Related.Activities,
+           ATPU,
+           CID,
+           NIS,
+           KWS,
+           POLICE,
+           GSU,
+           KDF, 
+           ADMINPOL,
+           KPR,
+           KPR, 
+           RDU, 
+           BPU_RPBU)) %>%
+  melt(id.var=c('Enforced.Disappearances',
+                'Suspected.of.Terrorism.Related.Activities')) %>%
+  filter(value==1) %>%
+  ggplot(., aes(x=Enforced.Disappearances, 
+                y=..count.., 
+                fill=Enforced.Disappearances)) + 
+  geom_bar() + 
+  facet_grid(Suspected.of.Terrorism.Related.Activities~variable) +
+  ggtitle("Enf.Disap.: police units ~ suspected terror. [counts]")
+
+# Relation between terrorism and religion: how many of the muslims were targeted in relation to anti-terror acts
+df.x %>% mutate(Counter.Terrorism.Act=as.character(Counter.Terrorism.Act),
+                Counter.Terrorism.Act=ifelse(Counter.Terrorism.Act=='0', 'No CT OPS', Counter.Terrorism.Act),
+                Counter.Terrorism.Act=ifelse(Counter.Terrorism.Act=='1', 'CT OPS', Counter.Terrorism.Act),
+                Counter.Terrorism.Act=ifelse(Counter.Terrorism.Act=='2', 'Unknown', Counter.Terrorism.Act)) %>%
+  ggplot(.) +
+  geom_bar(aes(x=Religion, fill=Religion)) +
+  facet_grid(Counter.Terrorism.Act~Suspected.of.Terrorism.Related.Activities) +
+  ggtitle('Muslim targeting: suspect. terr. ~ counter terr. act OPS')
+
+```
+
+```{r fig.height=12, fig.width=12, eval=F}
+library(placement)
+coordset <- lapply(paste(unique(df.x$Location.city), 'Kenya', sep = ',') ,function(x) geocode_url(x, auth="standard_api", privkey="AIzaSyA0P3ttBF5MNosQkQoVj7lRnYg5NoLrL_w", clean=TRUE, add_date='today', verbose=TRUE))
+geo <- cbind(Location.city=unique(df.x$Location.city), coordset %>% do.call(rbind, .))
+df.x %>%
+  filter(!is.na(Location.city)) %>%
+  group_by(Location.city) %>%
+  summarise(n=n()) %>%
+  left_join(., geo, by='Location.city') -> geo
+library(ggmap)
+library(ggrepel)
+map <- qmap(location='Maua, Kenya', zoom = 6)
+map + 
+  geom_point(data=geo, aes(x=lng, y=lat, size=n), colour='red', alpha=0.5) +
+  geom_text_repel(data=geo, aes(x=lng, y=lat, label=paste(Location.city, paste0('[',n,']'))), segment.size = 0.5) +
+  scale_size(range = c(1,30))
+save(geo, file='/Users/lucienbaumgartner/Documents/CAPPY/geodata_cities.RData')
+```
+
+
+
+
+
