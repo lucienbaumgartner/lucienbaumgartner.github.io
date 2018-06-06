@@ -1,0 +1,60 @@
+<style>
+.hidden{
+    display:none;
+}
+
+.unhidden{
+    display:inline-block;
+}
+</style>
+<script type="text/javascript">
+function unhide(clickedButton, divID) {
+var item = document.getElementById(divID);
+if (item) {
+    if(item.className=='hidden'){
+        item.className = 'unhidden' ;
+        clickedButton.value = 'Hide Chapters'
+    }else{
+        item.className = 'hidden';
+        clickedButton.value = 'Show Chapters'
+    }
+}}
+
+</script>
+
+
+<section class="bg-primary about-format" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">About the Project</h2>
+                <hr class="light">
+                <p class="text-faded">This website is part of the UZH Democracy, Development, and International Relations Capstone Project of Fall 2017.
+                  The project works in collaboration with Amnesty International to research the political and social context of human rights violations by Kenyan security agencies.
+                  The analysis below presents our findings.</p>
+
+
+                  <div class="text-center">
+                  <input class="btn btn-secondary" type="button" onclick="unhide(this, 'lala')" value="Show Chapters" style="font-size:100%;margin:20px 0 10px 0;">
+                  </div>
+
+
+                  <div id="lala" class="hidden">
+                    <ul>
+                      <li><a href="#article1">The Victims</a></li>
+                      <li><a href="#article2">Kenya's Battle with Terrorism</a></li>
+                      <li><a href="#article3">Tackling Terror in Kenya</a></li>
+                      <li><a href="#article4">Kenya's Police Units</a></li>
+                      <li><a href="#article5">The Legacy of Police Violence in Kenya</a></li>
+                      <li><a href="#article6">Abuse in Kenya's Marginalized Communities</a></li>
+                      <li><a href="#article7">Recommendations</a></li>
+                      <li><a href="#article8">Data and Sources</a></li>
+                    </ul>
+                  </div>
+
+              </div>
+        </div>
+    </div>
+
+
+</section>
