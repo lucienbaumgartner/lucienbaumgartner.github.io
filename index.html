@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<body>
+<div class="container">
+  {% include intro.html %}
+</div>
+
+<div class="container">
+  <h1>News</h1>
+  <div class="blog-index">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% include news/news_template.html %}
+  </div>
+</div>
+</body>
