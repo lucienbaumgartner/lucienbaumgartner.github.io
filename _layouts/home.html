@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<head>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+  <script type='text/javascript'>
+$('a[href*=#]').click(function(event){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    event.preventDefault();
+});</script>
+</head>
+
+<!--
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+-->
+<div id="welcome">
+  <div class="content">
+    <img src="../img/Luc1.png" class="picbox">
+
+    <div class="intro">
+      <p>I'm a student, sure.</p>
+      <p>But I'm also a an experienced data cruncher, specialized in data mining, geomapping, and vizualizations.</p>
+      <p>Hard working, autodidact, and a joy to work with.</p>
+    </div>
+
+    <div class='navbar-fixed'>
+      <ul>
+        <li "float:left"><a href="# /">Home</a></li>
+        <li><a href="#cv" id="anchor1" class="anchorLink"> CV</a></li>
+        <li><a href="#projects" id="anchor2" class="anchorLink">Projects</a></li>
+        <li><a href="#contact" id="anchor3" class="anchorLink">Contact</a></li>
+      <ul>
+    </div>
+  </div>
+</div>
+
+
+<div name="projects" id="projects">
+  <div class="projects-box">
+    {%- if site.categories.projects.size > 0 -%}
+      <h1 class="projects-header">Projects</h1>
+      <ul class="projects-content">
+        {%- for post in site.categories.projects -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+            {{ post.excerpt }}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <p class="rss-subscribe projects-content">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+  </div>
+</div>
+
+<div name="cv" id="cv">
+  {% capture my_include %}{% include cv.md %}{% endcapture %}{{ my_include | markdownify }}
+</div>
