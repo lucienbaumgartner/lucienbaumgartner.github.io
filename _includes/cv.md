@@ -86,16 +86,14 @@ __Lab assistant in Evolutionary Biology (UZH, Dr. Gaston D. Guex)__, Dätwil
 - Team leader for archiving and digitization of existing sample stocks
 - Participation in regional nature conservation projects (data visualization)
 
-Sept. 2015 - Juni 2016		Tutor für Prof. Dr. Urs Marti (Politische Philosophie)
-
 `Sep 2015 - Jun 2016`
-__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Urs Marti)__
+__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Urs Marti)__, Zurich
 - Weekly reading course with approx. 8 students with text-based exercises on argumentation theory and logic
 - Assistance with text selection and compilation of the text corpus
 - Accompaniment of the students during their Bachelor thesis
 
 `Sep 2015 - Jun 2016`
-__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Francis Cheneval)__
+__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Francis Cheneval)__, Zurich
 - Weekly tutorial with approx. 25 students
 - Introduction to text exegesis and follow-up of the lecture material
 - Exam preparation
