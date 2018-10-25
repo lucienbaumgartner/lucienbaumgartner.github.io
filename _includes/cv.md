@@ -60,13 +60,13 @@ Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.tech
 
 ## Occupation
 `Jan 2018 - now`
-__Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi)__
+__Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi)__, Zurich
 
 `Jan 2018 - now`
-__Research Assistant for Dr. Anita Gohdes (UZH)__
+__Research Assistant for Dr. Anita Gohdes (UZH)__, Zurich
 
 `Jan 2018 - now`
-__Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi)__
+__Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi)__, Zurich
 
 `Apr 2017 - now`
 __Salesman at the Tactica Gmbh__, Zurich
