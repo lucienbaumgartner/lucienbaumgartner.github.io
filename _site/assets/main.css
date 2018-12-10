@@ -408,9 +408,11 @@ table {
 .picbox {
   display: block;
   width: 35%;
-  padding-bottom: 30px;
-  margin: auto;
-  border-radius: 50%; }
+  height: auto;
+  margin: auto auto 50px auto;
+  border-radius: 100%;
+  border: 3px solid black;
+  -webkit-animation: blink .5s step-end infinite alternate; }
 
 #welcome {
   height: 100vh;

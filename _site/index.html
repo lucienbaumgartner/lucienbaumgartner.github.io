@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Lucien Baumgartner" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Lucien Baumgartner","name":"Lucien Baumgartner","description":"lala","@context":"http://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","name":"Lucien Baumgartner","headline":"Lucien Baumgartner","description":"lala","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Lucien Baumgartner" /></head>
 <body>
@@ -39,23 +39,24 @@
         <head>
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
   <script type='text/javascript'>
-$('a[href*=#]').click(function(event){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    event.preventDefault();
-});</script>
+    $('a[href*=#]').click(function(event){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        event.preventDefault();
+    });
+  </script>
 </head>
 
 <!---->
 <div id="welcome">
   <div class="content">
-    <img src="../img/Luc1.png" class="picbox">
+    <img src="../img/github-profile-quadr.png" class="picbox">
 
     <div class="intro">
       <p>I'm a student, sure.</p>
       <p>But I'm also a an experienced data cruncher, specialized in data mining, geomapping, and vizualizations.</p>
-      <p>Hard working, autodidact, and a joy to work with.</p>
+      <p>A joyful, hard working, autodidact.</p>
     </div>
 
     <div class='navbar-fixed'>
@@ -73,6 +74,14 @@ $('a[href*=#]').click(function(event){
 <div name="projects" id="projects">
   <div class="projects-box"><h1 class="projects-header">Projects</h1>
       <ul class="projects-content"><li><span class="post-meta">Jul 3, 2018</span>
+          <h3>
+            <a class="post-link" href="/projects/2018/07/03/url-crawler.html">
+              URL Crawler
+            </a>
+          </h3>
+            <iframe src="https://raw.githubusercontent.com/lucienbaumgartner/r-helpers/master/readme/text-extraction-url-crawling.html"></iframe>
+
+        </li><li><span class="post-meta">Jul 3, 2018</span>
           <h3>
             <a class="post-link" href="/projects/2018/07/03/text-similarity.html">
               Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations
@@ -98,23 +107,26 @@ $('a[href*=#]').click(function(event){
 <h2 id="education">Education</h2>
 
 <p><code class="highlighter-rouge">Sept 2016 - now</code>
-<strong>University of Zurich, Zurich.</strong></p>
+<strong>University of Zurich [Zurich].</strong></p>
 
 <ul>
   <li>Master in Social Sciences // Major: Political Science // Minor: Philosophy</li>
+  <li>Track: Data-driven journalism</li>
 </ul>
 
 <p><code class="highlighter-rouge">Sept 2013 - June 2016</code>
-<strong>University of Zurich, Zurich</strong></p>
+<strong>University of Zurich [Zurich].</strong></p>
 
 <ul>
   <li>Bachelor in Social Sciences // Major: Political Science // Minor: Philosophy</li>
 </ul>
 
 <p><code class="highlighter-rouge">Sept 2011 - June 2013</code>
-<strong>Erwachsenenbildung, Cambridge</strong></p>
+<strong>Kantonale Maturitätsschule für Erwachsene (College) [Zurich]</strong></p>
 
-<p>College</p>
+<ul>
+  <li>Track: Classical languages</li>
+</ul>
 
 <!--
 
@@ -148,17 +160,67 @@ Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.tech
 -->
 
 <h2 id="occupation">Occupation</h2>
-
-<p><code class="highlighter-rouge">1600</code>
-<strong>Royal Mint</strong>, London</p>
-
+<p><code class="highlighter-rouge">Jan 2018 - now</code>
+<strong>Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi) [Zurich]</strong></p>
 <ul>
-  <li>Warden</li>
-  <li>Minted coins</li>
+  <li>Assistance for research proposal for SocialScienceOne</li>
+  <li>Development of various webscrapers, data pipelines, text data cleaning and translation functions, etc.</li>
+  <li>Composing workflows for analysis and visualizations</li>
+  <li>Web development and logo design</li>
 </ul>
 
-<p><code class="highlighter-rouge">1600</code>
-<strong>Lucasian professor of Mathematics</strong>, Cambridge University</p>
+<p><code class="highlighter-rouge">Jan 2018 - now</code>
+<strong>Research Assistant for Dr. Anita Gohdes (UZH)</strong>, Zurich</p>
+<ul>
+  <li>Assistance for Twitter data project on the Syrian civil war</li>
+  <li>Geodata wrangling and tool development (e.g. <a href="https://htmlpreview.github.io/?https://github.com/lucienbaumgartner/r-helpers/blob/master/reverse-geocoding/readme.html">Emulation of reverseGeocoder library in R</a>)</li>
+</ul>
+
+<p><code class="highlighter-rouge">Jan 2018 - now</code>
+<strong>Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi) [Zurich]</strong></p>
+<ul>
+  <li>Bi-weekly classes on data handling and visualization in R</li>
+  <li>Mentoring of the students publications (<a href="http://pwiweb.uzh.ch/wordpress/">Blog</a>)</li>
+</ul>
+
+<p><code class="highlighter-rouge">Apr 2017 - now</code>
+<strong>Salesman at the Tactica Gmbh [Oerlikon]</strong></p>
+<ul>
+  <li>Advice and sales in retail shop &amp; Organizing test games</li>
+  <li>Updating the online shop</li>
+</ul>
+
+<p><code class="highlighter-rouge">Aug 2017 - Dec 2017</code>
+<strong>Internship as data journalist at NZZ [Zurich]</strong></p>
+<ul>
+  <li>Data acquisition (research, web scraping) and cleaning as well as visualisation and communication of results</li>
+  <li>Planning, management and implementation of own projects</li>
+  <li>Optimization of the workflow for live data analysis at major events such as the 2017 federal elections</li>
+</ul>
+
+<p><code class="highlighter-rouge">Jan 2014 - Jan 2018</code>
+<strong>Lab assistant in Evolutionary Biology (UZH, Dr. Gaston D. Guex) [Dätwil]</strong></p>
+<ul>
+  <li>Database management and evaluation of Migration data from amphibians</li>
+  <li>Team leader for archiving and digitization of existing sample stocks</li>
+  <li>Participation in regional nature conservation projects (data visualization)</li>
+</ul>
+
+<p><code class="highlighter-rouge">Sep 2015 - Jun 2016</code>
+<strong>Assistant teacher for Political Philosophy (UZH, Prof. Dr. Urs Marti) [Zurich]</strong></p>
+<ul>
+  <li>Weekly reading course with approx. 8 students with text-based exercises on argumentation theory and logic</li>
+  <li>Assistance with text selection and compilation of the text corpus</li>
+  <li>Accompaniment of the students during their Bachelor thesis</li>
+</ul>
+
+<p><code class="highlighter-rouge">Sep 2015 - Jun 2016</code>
+<strong>Assistant teacher for Political Philosophy (UZH, Prof. Dr. Francis Cheneval), Zurich</strong></p>
+<ul>
+  <li>Weekly tutorial with approx. 25 students</li>
+  <li>Introduction to text exegesis and follow-up of the lecture material</li>
+  <li>Exam preparation</li>
+</ul>
 
 <!-- ### Footer
 
