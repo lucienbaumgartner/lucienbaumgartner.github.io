@@ -60,7 +60,7 @@ Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.tech
 
 ## Occupation
 `Jan 2018 - now`
-__Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi)__, Zurich
+__Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi), Zurich__
 - Assistance for research proposal for SocialScienceOne
 - Development of various webscrapers, data pipelines, text data cleaning and translation functions, etc.
 - Composing workflows for analysis and visualizations
@@ -72,35 +72,35 @@ __Research Assistant for Dr. Anita Gohdes (UZH)__, Zurich
 - Geodata wrangling and tool development (e.g. [Emulation of reverseGeocoder library in R](https://htmlpreview.github.io/?https://github.com/lucienbaumgartner/r-helpers/blob/master/reverse-geocoding/readme.html))
 
 `Jan 2018 - now`
-__Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi)__, Zurich
+__Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi), Zurich__
 - Bi-weekly classes on data handling and visualization in R
 - Mentoring of the students publications ([Blog](http://pwiweb.uzh.ch/wordpress/))
 
 `Apr 2017 - now`
-__Salesman at the Tactica Gmbh__, Zurich
+__Salesman at the Tactica Gmbh, Zurich__
 - Advice and sales in retail shop & Organizing test games
 - Updating the online shop
 
 `Aug 2017 - Dec 2017`
-__Internship as data journalist at NZZ__, Zurich
+__Internship as data journalist at NZZ, Zurich__
 - Data acquisition (research, web scraping) and cleaning as well as visualisation and communication of results
 - Planning, management and implementation of own projects
 - Optimization of the workflow for live data analysis at major events such as the 2017 federal elections
 
 `Jan 2014 - Jan 2018`
-__Lab assistant in Evolutionary Biology (UZH, Dr. Gaston D. Guex)__, Dätwil
+__Lab assistant in Evolutionary Biology (UZH, Dr. Gaston D. Guex), Dätwil__
 - Database management and evaluation of Migration data from amphibians
 - Team leader for archiving and digitization of existing sample stocks
 - Participation in regional nature conservation projects (data visualization)
 
 `Sep 2015 - Jun 2016`
-__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Urs Marti)__, Zurich
+__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Urs Marti), Zurich__
 - Weekly reading course with approx. 8 students with text-based exercises on argumentation theory and logic
 - Assistance with text selection and compilation of the text corpus
 - Accompaniment of the students during their Bachelor thesis
 
 `Sep 2015 - Jun 2016`
-__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Francis Cheneval)__, Zurich
+__Assistant teacher for Political Philosophy (UZH, Prof. Dr. Francis Cheneval), Zurich__
 - Weekly tutorial with approx. 25 students
 - Introduction to text exegesis and follow-up of the lecture material
 - Exam preparation
