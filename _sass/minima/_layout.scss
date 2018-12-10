@@ -385,102 +385,86 @@
   */
 #cv {
   padding-top: 200px;
-}
-
-#cv p {
-  display: inline-flex;
-	position: relative;
-	left: 26%;
-	margin-bottom: 0;
-	margin-right: 0;
-  margin-top: 0.8em;
-	width: 65%;
-}
-
-#cv code {
-  text-align: right;
-	line-height: 1.75em;
-	color: #aaa;
-  background-color: transparent;
-  border: none;
-  left: -30%;
-  position: absolute;
-  font-size: 90%;
-  width: 20%;
-}
-
-#cv ul {
-	position: relative;
-	left: 22%;
-	width: 65%;
-	margin-bottom: 1.5em;
-  list-style-type: none;
-}
-
-/*uncomment to get dashes in the list*/
-/*li:before {
-	content: "-";
-	position: relative;
-	left: -0.25em;
-}*/
-
-
-#cv li ul {
-	position: relative;
-	width: 100%;
-}
-
-#cv h2,h3,h4 {
-	font-weight: 400;
-	width: 65%;
-}
-
-#cv h2:before {
-  content: '// '
-}
-
-#cv h3:before {
-  content: '/ '
-}
-
-#cv h1 {
-	text-align: center;
-	font-size: 150%;
-	position: relative;
-}
-
-#cv h1+p {
-	/*subtitle*/
-	font-style: italic;
-	font-size: 110%;
-}
-
-#cv h2 {
-	font-size: 1.1em;
-	color: #a00;
-	margin-top: 3em;
-	position: relative;
-	top: 1.4em;
-	text-align: right;
-	width: 20%;
-}
-
-#cv h3 {
-	font-size: 1em;
-	line-height: 2em;
-	position: relative;
-	top: 1.7em;
-	text-align: right;
-	width: 20%;
-}
-
-#cv a {
-	color: inherit;
-	/*text-decoration:none*/
-}
-
-#cv a:hover {
-	color:#39f
+  p {
+    display: inline-flex;
+  	position: relative;
+  	left: 26%;
+  	margin-bottom: 0;
+  	margin-right: 0;
+    margin-top: 0.8em;
+  	width: 65%;
+  }
+  code {
+    text-align: right;
+  	line-height: 1.75em;
+  	color: #aaa;
+    background-color: transparent;
+    border: none;
+    left: -30%;
+    position: absolute;
+    font-size: 90%;
+    width: 20%;
+  }
+  ul {
+  	position: relative;
+  	left: 22%;
+  	width: 65%;
+  	margin-bottom: 1.5em;
+    list-style-type: none;
+  }
+  li ul {
+  	position: relative;
+  	width: 100%;
+  }
+  li:before {
+  	content: "-";
+  	position: relative;
+  	left: -0.25em;
+  }
+  h2,h3,h4 {
+  	font-weight: 400;
+  	width: 65%;
+  }
+  h2 {
+    font-size: 1.1em;
+  	color: #a00;
+  	margin-top: 3em;
+  	position: relative;
+  	top: 1.4em;
+  	text-align: right;
+  	width: 20%;
+    &:before {
+      content: '// '
+    }
+  }
+  h3 {
+    font-size: 1em;
+  	line-height: 2em;
+  	position: relative;
+  	top: 1.7em;
+  	text-align: right;
+  	width: 20%;
+    &:before {
+      content: '/ '
+    }
+  }
+  h1 {
+  	text-align: center;
+  	font-size: 150%;
+  	position: relative;
+  }
+  h1+p {
+  	/*subtitle*/
+  	font-style: italic;
+  	font-size: 110%;
+  }
+  a {
+  	color: inherit;
+  	/*text-decoration:none*/
+  }
+  a:hover {
+  	color:#39f
+  }
 }
 
 #webaddress {
