@@ -444,12 +444,16 @@ table {
 
 .projects-header {
   display: inline;
-  color: white;
   font-weight: 600;
   padding: 30px; }
+  .projects-header a {
+    color: white; }
+    .projects-header a:hover {
+      text-decoration: none; }
 
 .projects-header:before {
-  content: '/// '; }
+  content: '/// ';
+  color: white; }
 
 .projects-box {
   padding-top: 30px; }
@@ -468,6 +472,24 @@ table {
 
 .projects-content a:hover {
   color: white; }
+
+.more-btn {
+  margin-left: 10vw;
+  color: white;
+  padding: 0px 30px;
+  left: 10px;
+  width: 60%; }
+
+.btn-style {
+  border-radius: 12px;
+  background-color: yellow;
+  font-family: inherit;
+  font-size: 90%; }
+  .btn-style a {
+    color: black;
+    text-decoration: none;
+    border-color: yellow;
+    font-weight: 500; }
 
 /**
   * cv

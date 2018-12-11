@@ -349,13 +349,19 @@
 
 .projects-header{
   display: inline;
-  color: white;
   font-weight: 600;
   padding: 30px;
+  a {
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 
 .projects-header:before{
   content: '/// ';
+  color: white;
 }
 
 .projects-box {
@@ -380,6 +386,26 @@
   color: white;
 }
 
+.more-btn {
+  margin-left: 10vw;
+  color: white;
+  padding: 0px 30px;
+  left: 10px;
+  width: 60%;
+}
+.btn-style {
+  border-radius: 12px;
+  background-color: yellow;
+  font-family: inherit;
+
+  font-size: 90%;
+  a {
+    color: black;
+    text-decoration: none;
+    border-color: yellow;
+    font-weight: 500;
+  }
+}
 /**
   * cv
   */
