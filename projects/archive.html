@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-
-<div name="projects" id="projects">
+<style media="screen">
+  .page-content {
+    background-color: #3A2D4D;
+  }
+</style>
+<div id="projects">
   <div class="projects-box">
     {%- if site.categories.projects.size > 0 -%}
-      <h1 class="projects-header">Projects</h1>
+      <h1 class="projects-header"><a href="/projects/archive">Projects</a></h1>
       <ul class="projects-content">
         {%- for post in site.categories.projects -%}
         <li>
