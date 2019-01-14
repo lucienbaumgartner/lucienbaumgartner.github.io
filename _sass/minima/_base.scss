@@ -23,6 +23,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height};
   font-family: "Crimson Text";
   color: $text-color;
+  font-size: $base-font-size;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
