@@ -9,7 +9,7 @@
 
 ## Education
 
-`Sept 2016 - now`
+`Sept 2016 - June 2019`
 __University of Zurich [Zurich].__
 
 - Master in Social Sciences // Major: Political Science // Minor: Philosophy
@@ -37,6 +37,9 @@ Bachelor thesis selected for official exhibition of best master theses, IPZ
 
 ## Publications
 
+`2019`
+- Causal Effects of Incumbency on Candidate Contextualization in Pre-election Media Coverage. Master thesis [/ pdf](/assets/res/DID-2018-August.pdf).
+
 `2018`
 - Cross-National and Sub-National Diffusion of Issue Definition: The Case of Smoking Bans in Switzerland. Working paper [/ pdf](/assets/res/DID-2018-August.pdf).
 
@@ -44,15 +47,20 @@ Bachelor thesis selected for official exhibition of best master theses, IPZ
 ## Occupation
 `Jan 2018 - now`
 __Tool developer for the Digital Democracy Lab (UZH, Prof. Dr. Fabrizio Gilardi) [Zurich]__
-- Assistance for research proposal for SocialScienceOne
-- Development of various webscrapers, data pipelines, text data cleaning and translation functions, etc.
-- Composing workflows for analysis and visualizations
-- Web development and logo design
+- Primary frontend developer (results will go public mid-August)
+- Assistance for an extensive research proposal for SocialScienceOne
+- Development of R- and Python-based data gathering methods and their backend implementation
+- Extensive text analysis with Structural Topic Models
+- Workflow panning
 
-`Jan 2018 - now`
+`Jan 2018 - June 2019`
 __Research Assistant for Dr. Anita Gohdes (UZH) [Zurich]__
-- Assistance for Twitter data project on the Syrian civil war
-- Geodata wrangling and tool development (e.g. [Emulation of reverseGeocoder library in R](https://htmlpreview.github.io/?https://github.com/lucienbaumgartner/r-helpers/blob/master/reverse-geocoding/readme.html))
+- Data analyst for geographic conflict analysis of the Syrian civil war based on Twitter data
+- Geodata wrangling and tool development (e.g. [Emulation of reverseGeocoder library in R](https://htmlpreview.github.io/?https://github.com/lucienbaumgartner/helper/blob/master/r/reverse-geocoding/readme.html))
+
+`Jan 2018 - June 2019`
+__Tool developer for Prof. Dr. Lukas Leemann (UZH) [Zurich]__
+- Developing a Javascript interface for Qualtrix surveys
 
 `Sept 2018 - Jan 2019`
 __Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi) [Zurich]__
@@ -61,18 +69,18 @@ __Assistant teacher in Data-driven Journalism (UZH, Prof. Dr. Fabrizio Gilardi) 
 
 `Apr 2017 - now`
 __Salesman at the Tactica Gmbh [Oerlikon]__
-- Advice and sales in retail shop & Organizing test games
+- Advice and sales in retail shop & organizing test games
 - Updating the online shop
 
 `Aug 2017 - Dec 2017`
 __Internship as data journalist at NZZ [Zurich]__
-- Data acquisition (research, web scraping) and cleaning as well as visualisation and communication of results
+- Data acquisition (research, web scraping) & cleaning as well as visualisation and communication of results
 - Planning, management and implementation of own projects
-- Optimization of the workflow for live data analysis at major events such as the 2017 federal elections
+- Optimization of the workflow for live data analysis at major events such as the 2017 federal elections for the Bundestag
 
 `Jan 2014 - Jan 2018`
 __Lab assistant in Evolutionary Biology (UZH, Dr. Gaston D. Guex) [Dätwil]__
-- Database management and evaluation of Migration data from amphibians
+- Database management and evaluation of migration data from amphibians
 - Team leader for archiving and digitization of existing sample stocks
 - Participation in regional nature conservation projects (data visualization)
 
