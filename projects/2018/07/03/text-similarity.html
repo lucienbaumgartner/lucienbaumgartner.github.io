@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations | Lucien Baumgartner</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations" />
+<meta name="author" content="Lucien Baumgartner & Maël Kubli" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This short contribution shall be an example for what one can expect form following articles in this project. The goal of this paper is to visualize the similarity between the five biggest parties within the swiss parliament and six well known and influential organizations. The underlying question to this article is: “Do we see similarities between actors which are commonly known as political close to each other or not?” Each actors’ official press release statements from their homepage were used to build a text corpus containing around 7’400 press releases from 2010 to April 2018. The results are quite interesting as they show some surprising similarities." />
+<meta property="og:description" content="This short contribution shall be an example for what one can expect form following articles in this project. The goal of this paper is to visualize the similarity between the five biggest parties within the swiss parliament and six well known and influential organizations. The underlying question to this article is: “Do we see similarities between actors which are commonly known as political close to each other or not?” Each actors’ official press release statements from their homepage were used to build a text corpus containing around 7’400 press releases from 2010 to April 2018. The results are quite interesting as they show some surprising similarities." />
+<link rel="canonical" href="/projects/2018/07/03/text-similarity.html" />
+<meta property="og:url" content="/projects/2018/07/03/text-similarity.html" />
+<meta property="og:site_name" content="Lucien Baumgartner" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-07-03T10:38:51+02:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/projects/2018/07/03/text-similarity.html","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/2018/07/03/text-similarity.html"},"author":{"@type":"Person","name":"Lucien Baumgartner & Maël Kubli"},"headline":"Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations","description":"This short contribution shall be an example for what one can expect form following articles in this project. The goal of this paper is to visualize the similarity between the five biggest parties within the swiss parliament and six well known and influential organizations. The underlying question to this article is: “Do we see similarities between actors which are commonly known as political close to each other or not?” Each actors’ official press release statements from their homepage were used to build a text corpus containing around 7’400 press releases from 2010 to April 2018. The results are quite interesting as they show some surprising similarities.","dateModified":"2018-07-03T10:38:51+02:00","datePublished":"2018-07-03T10:38:51+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Lucien Baumgartner" /></head>
+<body>
+
+<!--<header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Lucien Baumgartner</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/category/projects.html">Projects</a></div>
+      </nav></div>
+</header>
+-->
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-07-03T10:38:51+02:00" itemprop="datePublished">Jul 3, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Lucien Baumgartner & Maël Kubli</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Text Similarity for Press Releases of Major Swiss Parties and Interest Organizations</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-07-03T10:38:51+02:00" itemprop="datePublished">Jul 3, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Lucien Baumgartner & Maël Kubli</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This short contribution shall be an example for what one can expect form following articles in this project. The goal of this paper is to visualize the similarity between the five biggest parties within the swiss parliament and six well known and influential organizations. The underlying question to this article is: “Do we see similarities between actors which are commonly known as political close to each other or not?” Each actors’ official press release statements from their homepage were used to build a text corpus containing around 7’400 press releases from 2010 to April 2018. The results are quite interesting as they show some surprising similarities.</p>
+
+<h3 id="data">Data</h3>
+
+<p>But first let us look at the data. To see how similar parties and organizations are to each other one needs suitable data. This data is publicly available from webpages and social media accounts for most actors of importance to the political live in Switzerland. The only thing that needs to be done is to collect all the data in a database. This is done in this very project. Hence, it is easy to build a data set containing only all the press releases of a specific set of actors already accessible in our database.</p>
+
+<p>In this work we settle for the five biggest parties in the parliament which are the people’s party of Switzerland (SVP), the social democratic party of Switzerland (SPS), the FDP the liberals (FDP), the Christian democratic people’s party of Switzerland (CVP) and the green party of Switzerland (GPS). Additionally, we select six organizations we believe to be of great importance to the political process in Switzerland. These are the Economie Suisse, the swiss framers union (SBV), the swiss trade union confederation (SGB), the swiss business association (SGV), the swiss bankers association, and Travail Suisse. For our analysis we use all press releases published by them on their official webpage from 2010 to April 2018. This includes 7’421 published press releases, which results in a text corpus of over 1.5 million n-grams after stemming without stop words.</p>
+
+<h3 id="analysis">Analysis</h3>
+
+<p>To get similarity values between all different actors there are several different formulas which could be used to obtain his. We settle for the Jaccard similarity coefficient.</p>
+
+<p>The formula for this is</p>
+
+<p style="text-align:center;">`J(A,B) = (|A \cap B|)/(|A \cup B|)`</p>
+
+<p>The index is also known simply as the Jaccard index. The Jaccard coefficient measures nothing else than the similarity between different sample sets.
+Unfortunately, if we apply this Jaccard similarity to all actors on the whole set of texts we get results which are not very useful. The issue here is that not all samples have the same size. Some have much more text published than others, which results in different similarity values when comparing the smaller actor with the bigger actor and vice versa.</p>
+
+<p>Therefore, we extract the 500 most frequent adjectives, nouns and keywords from each actors’ corpus and produce a similarity matrix for each of these types. This results in useful similarity values which are quite similar for each type between each actor. To display the results nicely in one plot the similarity matrices are pooled with the arithmetic mean of the similarity of all three matrices.</p>
+
+<p>The keywords were extracted with the rapid automatic keyword extraction algorithm (RAKE). This algorithm looks for keywords by looking at contiguous sequence of words which do not contain irrelevant words. The process behind calculates a score for each word which is part of any candidate keyword (in our case adjectives and nouns). This is achieved through the algorithms counting how many times each word is occurring and how many times it co-occurs with other words. From this a score is calculated for each word. This is the ratio of how many times it co-occurs with other words to the word frequency. Then the RAKE score for the full candidate keyword is calculated by summing up the scores from each of the words which define the candidate keywords. This particular step ensures that the results we have are to some degree topics that are used frequently by each actor. Hence, we are to some degree able to see which actors share topics with each other and which do not.</p>
+
+<h3 id="results">Results</h3>
+
+<p><img src="/img/txt_sim_webdev.png" alt="sim" /></p>
+
+<h3 id="references">References</h3>
+<ul class="references">
+<li>Niwattanakul, Suphakit, Jatsada Singthongchai, Ekkachai Naenudorn, and Supachanun Wanapu. 2013. “Using of Jaccard Coefficient for Keywords Similarity.” International MultiConference of Engineers and Computer Scientists I(March): 380–84.</li>
+
+
+<li>Rose, Stuart, Dave Engel, Nick Cramer, and Wendy Cowley. 2010. “Automatic Keyword Extraction from Individual Documents.” Text Mining: Applications and Theory (March): 1–20.</li>
+</ul>
+
+  </div><a class="u-url" href="/projects/2018/07/03/text-similarity.html" hidden></a>
+</article>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+          <div class="content">
+            <p>This short contribution shall be an example for what one can expect form following articles in this project. The goal of this paper is to visualize the similarity between the five biggest parties within the swiss parliament and six well known and influential organizations. The underlying question to this article is: “Do we see similarities between actors which are commonly known as political close to each other or not?” Each actors’ official press release statements from their homepage were used to build a text corpus containing around 7’400 press releases from 2010 to April 2018. The results are quite interesting as they show some surprising similarities.</p>
+
+<h3 id="data">Data</h3>
+
+<p>But first let us look at the data. To see how similar parties and organizations are to each other one needs suitable data. This data is publicly available from webpages and social media accounts for most actors of importance to the political live in Switzerland. The only thing that needs to be done is to collect all the data in a database. This is done in this very project. Hence, it is easy to build a data set containing only all the press releases of a specific set of actors already accessible in our database.</p>
+
+<p>In this work we settle for the five biggest parties in the parliament which are the people’s party of Switzerland (SVP), the social democratic party of Switzerland (SPS), the FDP the liberals (FDP), the Christian democratic people’s party of Switzerland (CVP) and the green party of Switzerland (GPS). Additionally, we select six organizations we believe to be of great importance to the political process in Switzerland. These are the Economie Suisse, the swiss framers union (SBV), the swiss trade union confederation (SGB), the swiss business association (SGV), the swiss bankers association, and Travail Suisse. For our analysis we use all press releases published by them on their official webpage from 2010 to April 2018. This includes 7’421 published press releases, which results in a text corpus of over 1.5 million n-grams after stemming without stop words.</p>
+
+<h3 id="analysis">Analysis</h3>
+
+<p>To get similarity values between all different actors there are several different formulas which could be used to obtain his. We settle for the Jaccard similarity coefficient.</p>
+
+<p>The formula for this is</p>
+
+<p style="text-align:center;">`J(A,B) = (|A \cap B|)/(|A \cup B|)`</p>
+
+<p>The index is also known simply as the Jaccard index. The Jaccard coefficient measures nothing else than the similarity between different sample sets.
+Unfortunately, if we apply this Jaccard similarity to all actors on the whole set of texts we get results which are not very useful. The issue here is that not all samples have the same size. Some have much more text published than others, which results in different similarity values when comparing the smaller actor with the bigger actor and vice versa.</p>
+
+<p>Therefore, we extract the 500 most frequent adjectives, nouns and keywords from each actors’ corpus and produce a similarity matrix for each of these types. This results in useful similarity values which are quite similar for each type between each actor. To display the results nicely in one plot the similarity matrices are pooled with the arithmetic mean of the similarity of all three matrices.</p>
+
+<p>The keywords were extracted with the rapid automatic keyword extraction algorithm (RAKE). This algorithm looks for keywords by looking at contiguous sequence of words which do not contain irrelevant words. The process behind calculates a score for each word which is part of any candidate keyword (in our case adjectives and nouns). This is achieved through the algorithms counting how many times each word is occurring and how many times it co-occurs with other words. From this a score is calculated for each word. This is the ratio of how many times it co-occurs with other words to the word frequency. Then the RAKE score for the full candidate keyword is calculated by summing up the scores from each of the words which define the candidate keywords. This particular step ensures that the results we have are to some degree topics that are used frequently by each actor. Hence, we are to some degree able to see which actors share topics with each other and which do not.</p>
+
+<h3 id="results">Results</h3>
+
+<p><img src="/img/txt_sim_webdev.png" alt="sim" /></p>
+
+<h3 id="references">References</h3>
+<ul class="references">
+<li>Niwattanakul, Suphakit, Jatsada Singthongchai, Ekkachai Naenudorn, and Supachanun Wanapu. 2013. “Using of Jaccard Coefficient for Keywords Similarity.” International MultiConference of Engineers and Computer Scientists I(March): 380–84.</li>
+
+
+<li>Rose, Stuart, Dave Engel, Nick Cramer, and Wendy Cowley. 2010. “Automatic Keyword Extraction from Individual Documents.” Text Mining: Applications and Theory (March): 1–20.</li>
+</ul>
+
+        </div>
+      </div>
+</main>
+
+</body>
+
+</html>
+
+  </div><a class="u-url" href="/projects/2018/07/03/text-similarity.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Contact me!</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Lucien Baumgartner</li><li><a class="u-email" href="mailto:luciengeorges.baumgartner@uzh.ch">luciengeorges.baumgartner@uzh.ch</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/lucienbaumgartner"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lucienbaumgartner</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
