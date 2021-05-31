@@ -1,0 +1,233 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Lucien Baumgartner
+title: PhD Candidate in Philosophy of Language
+email: lucien.baumgartner@philos.uzh.ch
+website: www.lucienbaumgartner.github.io
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+#twitter_username: facespics
+github_username:  lucienbaumgartner
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+#linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+#additional_links:
+#- title: itsgoingto.be
+#  icon: fas fa-globe
+#  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/github-pic.png
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's <mark>Lucien</mark>! I'm a PhD candidate in the SNSF Eccellenza Team of Prof. Dr. Kevin Reuter, at the Department of Philosophy, University of Zurich. My research concerns normativity in language, and more specifically <mark>dual character concepts</mark> and <mark>normative generics</mark>. Most of my work is situated in <mark>theoretical philosophy</mark>, but it also profits from empirical work in experimental philsophy. I'm a well-versed <mark>data scientist</mark>, specialized in data acquisition and computational linguistics. The interdisciplinary character of my work offers new perspectives on perennial philosophical questions. It also allows for bottom-up approach to conceptual engineering, based on natural language data. And most importantly, <mark>it's fun</mark>!
+
+content:
+  - title: Research Papers # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: The Dual Character Concept Approach to Normative Generics
+        caption: single author
+        #link: github.com/sproogen
+        #link_text: 2021
+        #additional_links:
+          #- title:  sproogen/modern-resume-theme
+          #  icon: fab fa-github
+          #  url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        description: | # this will include new lines to allow paragraph
+          Normative generics, such as the rebuke "Boys don’t cry.", are ubiquitous in everyday-language.
+          But what exactly makes them normative? Among the most recent explanations are Dual Character
+          Concepts. While the DCC framework works well for lexical norms in social kind generics,
+          it cannot account for context-dependent normative interpretations of generics. This paper
+          shows that the conditions for dual character normativity can be generalized from concepts to expressions
+          in order to eliminate this blind-spot.
+      - layout: left
+        title: Tracing Thick Concepts Through Corpora
+        caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
+        description: |
+          Philosophers and linguists currently lack the means to reliably identify evaluative concepts and to measure these concepts'
+          evaluative intensity. Using a corpus-based approach, we present two new methods that allow us to distinguish evaluatively thick
+          adjectives like 'courageous' from descriptive adjectives like 'tall', and from value-associated adjectives like 'sunny'.
+      - layout: left
+        title: Examining Evaluativity in Legal Discourse
+        caption: with<br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a><br>Severin Frohofer<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a>
+        #link: github.com/sproogen
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        description: |
+          How evaluative are legal texts? Do legal professionals speak a more descriptive or perhaps a more evaluative language? In this paper, we present the results of a corpus study in which we examined the use of evaluative language in both the legal domain as well as public discourse.
+
+  - title: Coding Projects
+    layout: list
+    content:
+      - layout: left
+        title: VOAT - An Autopsy of Alt-Right Discourse
+        link: github.com/lucienbaumgartner/voat-spiders
+        # link_text: Project Website
+        additional_links:
+          - title:  lucienbaumgartner/voat-spiders
+            icon: fab fa-github
+            url: https://github.com/lucienbaumgartner/voat-spiders
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        description: | # this will include new lines to allow paragraphs
+          Voat was an American alt-tech news aggregator and social networking service, created in 2014 and  shut down on Christmas 2020. It was infamously known to be a home to hate speech, alt-right content, racism and misogyny. Due to its shutdown, the discourse on Voat is closed and sealed, and  thus constitutes an important artifact for the research on hate speech. As an effort to make Voat-data easily and openly available for research, I'm creating a comprehensive Voat-corpus along with a preliminary analysis of its content.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Digital Society Initiative
+        caption: Starting in Autumn 21
+        sub_title: Excellence Program
+        description: | # this will include new lines to allow paragraphs
+          Digitalization is fundamentally changing science and society. The Digital Society Initiative (DSI) at the University of Zurich offers an Excellence Program for new and beginning PhD students interested in the digital transformation. As a complementary curriculum to a doctoral program, general doctorate or doctoral subject, it prepares students of all disciplines for a world in which interdisciplinary collaboration is a top priority for tackling digitalization topics. In a cross-disciplinary environment, PhD students build up and expand interdisciplinary thinking and skills as well as digital competences at the highest level in the disciplines affected by digitalization.
+      - layout: left
+        title: MA Social Sciences
+        caption: 2016 - 2019
+        sub_title: University of Zurich
+        description: | # this will include new lines to allow paragraphs
+          <p>Major: <mark>Political Science</mark></p><p>Minor: <mark>Philosophy</mark></p><p>Thesis: Causal Effects of Incumbency on Candidate Contextualization in Pre-election Media Coverage</p>
+
+      - layout: left
+        title: BA Social Sciences
+        caption: 2013 - 2016
+        sub_title: University of Zurich
+        description: | # this will include new lines to allow paragraphs
+          <p>Major: <mark>Political Science</mark></p><p>Minor: <mark>Philosophy</mark></p><p>Thesis: Conflict and Normativity in Machiavelli's Writings</p>
+
+  - title: Work Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Digital Democracy Lab
+        link: https://digdemlab.io/
+        # link_text: boringcompany.com
+        sub_title: Data Scientist
+        caption: January 2018 - December 2019
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            The Digital Democracy Lab researches the implications of digital technology for politics and democracy using computational social science methods. It provides a research infrastructure that enables efficient, scalable, and replicable data collection and analysis. Key areas of research are political communication and public opinion, e-government and public administration, AI and governance, civic tech and political participation, the regulation of tech platforms, and state repression and surveillance. I was tasked with frontend production and data mining projects.
+      - layout: left
+        title: Syrian Civil War Twitter Project
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Research Assistant for <a class="colleagues" href="http://www.anitagohdes.net/">Prof. Dr. Anita Gohdes</a>
+        caption: January 2018 - June 2019
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Twitter data can help to analyze military combat actions from the perspective of civilians trapped in disputed zones. As part of this project, I was tasked with geomapping tweets to analyze gender-based violence in the civil war. As part of this project, I developed a <a href="https://htmlpreview.github.io/?https://github.com/lucienbaumgartner/helper/blob/master/r/reverse-geocoding/readme.html">KD-tree based reverse geocoder in R</a>, emulating the reverseGeocoder python library.
+      - layout: left
+        title: NZZ
+        link: https://www.nzz.ch/
+        # link_text: boringcompany.com
+        sub_title: Intern in Data-driven Journalism
+        caption: August 2017 - December 2017
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          Data-driven journalism has become mainstay for open source and accountable news reporting in the age of fake news. The NZZ has a young and engaged team that focuses on long-format analyses and background articles as live monitoring of events. As an intern, I co-organized the coverage 2017 German Bundestagswahl, and wrote articles about various topics, such as the legalization of marijuana in the US, or the most controversial movies of all time.
+
+  - title: Teaching # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Normativity in Moral Language
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
+        caption: February 2021 - May 2021
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          This bachelor seminary focuses on the difference between evaluative and non-evaluative language, norm communication as well as normative conceptual engineering.
+      - layout: left
+        title: Data Journalism
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Tutor for <a class="colleagues" href="https://www.fabriziogilardi.org/">Prof. Dr. Fabrizio Gilardi</a>
+        caption: September 2018 - December 2018
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          The aim of this master seminary is for students to get acquainted with text analysis in R, vizulations and communication of results for a wider audience.
+      - layout: left
+        title: History of Political Thought - Machiavelli
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.ch/artikel/urs-marti-brander">Prof. Dr. em. Urs Marti-Brander</a>
+        caption: September 2015 - June 2016
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          For this bachelor seminary, we read Machiavelli's Il Principe and Discorsi, with a special focus on the relation of author and text.
+      - layout: left
+        title: Introduction to Political Philosophy
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.uzh.ch/en/seminar/people/seminar_head/cheneval.html">Prof. Dr Francis Cheneval</a>
+        caption: September 2015 - December 2015
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          This lecture for bachelor students gives an overview of the history of thought in poltical philosophy.
+#  - title: A Little More About Me
+#    layout: text
+#    content: | # this will include new lines to allow paragraphs
+#      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#      - Rock climbing
+#      - Gaming
+#      - Knitting
+#      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+#      Look at this cool image
+#      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
