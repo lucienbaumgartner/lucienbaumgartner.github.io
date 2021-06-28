@@ -111,21 +111,21 @@ content:
     layout: list
     content:
       - layout: left
-        title: Tracing Thick Concepts Through Corpora @ X-Phi Europe 2021
-        link: lucienbaumgartner.github.io/coliphi21/
-        caption: 17.06.2021
-        description: | # this will include new lines to allow paragraphs
-          Presentation of our working paper.
-      - layout: left
-        title: Examining Evaluativity in Legal Discourse: A Comparative Corpus-Linguistic Study of Thick Concepts @ X-Phi Europe 2021
+        title: X-Phi Europe 2021
         link: xphiprague.eu
-        caption: 17.06.2021
+        caption: 06/17/2021
         description: | # this will include new lines to allow paragraphs
-          Presentation of our working paper with Severin Frohofer.
+          "Tracing Thick Concepts Through Corpora".
+      - layout: left
+        title: X-Phi Europe 2021
+        link: xphiprague.eu
+        caption: 06/17/2021
+        description: | # this will include new lines to allow paragraphs
+          "Examining Evaluativity in Legal Discourse - A Comparative Corpus-Linguistic Study of Thick Concepts" with Severin Frohofer.
       - layout: left
         title: Corpus Linguistics and Philosophy Workshop 2021
-        link: xphiprague.eu
-        caption: 10.06-12.06.2021
+        link: lucienbaumgartner.github.io/coliphi21/
+        caption: 06/10/2021-06/12/2021
         description: | # this will include new lines to allow paragraphs
           Teaching the basics of corpus linguistics and web scraping.
 
