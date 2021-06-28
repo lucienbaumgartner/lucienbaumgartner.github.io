@@ -107,6 +107,28 @@ content:
         description: | # this will include new lines to allow paragraphs
           Voat was an American alt-tech news aggregator and social networking service, created in 2014 and  shut down on Christmas 2020. It was infamously known to be a home to hate speech, alt-right content, racism and misogyny. Due to its shutdown, the discourse on Voat is closed and sealed, and  thus constitutes an important artifact for the research on hate speech. As an effort to make Voat-data easily and openly available for research, I'm creating a comprehensive Voat-corpus along with a preliminary analysis of its content.
 
+  - title: Talks 2021
+    layout: list
+    content:
+      - layout: left
+        title: Tracing Thick Concepts Through Corpora @ X-Phi Europe 2021
+        link: lucienbaumgartner.github.io/coliphi21/
+        caption: 17.06.2021
+        description: | # this will include new lines to allow paragraphs
+          Presentation of our working paper.
+      - layout: left
+        title: Examining Evaluativity in Legal Discourse: A Comparative Corpus-Linguistic Study of Thick Concepts @ X-Phi Europe 2021
+        link: xphiprague.eu
+        caption: 17.06.2021
+        description: | # this will include new lines to allow paragraphs
+          Presentation of our working paper with Severin Frohofer.
+      - layout: left
+        title: Corpus Linguistics and Philosophy Workshop 2021
+        link: xphiprague.eu
+        caption: 10.06-12.06.2021
+        description: | # this will include new lines to allow paragraphs
+          Teaching the basics of corpus linguistics and web scraping.
+
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
