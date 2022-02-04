@@ -9,7 +9,7 @@ version: 2
 name: Lucien Baumgartner
 title: PhD Candidate in Philosophy of Language
 email: lucien.baumgartner@philos.uzh.ch
-website: www.lucienbaumgartner.github.io
+#website: www.lucienbaumgartner.github.io
 
 # Dark Mode (true/false/never)
 darkmode: true
