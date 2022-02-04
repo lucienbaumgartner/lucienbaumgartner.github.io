@@ -55,7 +55,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Dual Character Concept Approach to Normative Generics
+        title: Dual Character Concepts Gone Wild
         caption: single author
         #link: github.com/sproogen
         #link_text: 2021
@@ -67,12 +67,17 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         description: | # this will include new lines to allow paragraph
-          Normative generics, such as the rebuke "Boys don’t cry.", are ubiquitous in everyday-language.
-          But what exactly makes them normative? Among the most recent explanations are Dual Character
-          Concepts. While the DCC framework works well for lexical norms in social kind generics,
-          it cannot account for context-dependent normative interpretations of generics. This paper
-          shows that the conditions for dual character normativity can be generalized from concepts to expressions
-          in order to eliminate this blind-spot.
+          Normative generics, such as the rebuke "Girls don't play football.", are ubiquitous in everyday language. But what exactly makes them normative? A popular explanation highlights the role of Dual Character Concepts (DCCs). However, while the DCC framework works well for lexical norms in social kind-generics, it cannot account for context-dependent normative interpretations of generics. This paper shows that the conditions for dual character norms can be generalized from concepts to expressions (DCEs) in order to eliminate this blind-spot. Instead of focusing on explanations limited to social kinds (e.g. idealized social functions), I suggest an approach based on linguistic features, namely definitional generics, and specific inference patterns. From this analysis, we learn that dual character is not restricted to certain social and artifact kinds, but can also occur <i>ad hoc</i>. As long as the stage is set right, we can formulate dual character norms about almost any kind-property relation. My considerations thus offer a new explanatory framework for both normative generics and DCCs more generally, and ultimately question the centrality of <i>lexical</i> norms.
+      - layout: left
+        title: "Could I be a giraffe?": Figurative Elements in Dual Character Classifications
+        caption: single author
+        description: |
+          Dual character concepts like <i>artist</i> or <i>magician</i> have a descriptive and normative dimension, which are considered to be independent of each other. Their normative dimension is generally assumed to be univocal and only indicative of literal classifications. Contrary to this conception, I argue that dual character classifications include figurative elements. I suggest to conceptualize dual character classifications as a lexical-pragmatic process involving sense broadening and narrowing, rather than as a genuine natural kind. These processes include metaphor and hyperbole as forms of category extension. This ultimately means that normative dual character classifications are much more complex and widespread than accepted hitherto.
+      - layout: left
+        title: Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts
+        caption: single author
+        description: |
+          Many scholars suggest there to be different evaluative concept classes, namely thin and thick concepts. To this date, hardly any empirical evidence exists on how to distinguish these two classes. In this paper, I propose new empirical classifiers for evaluative concepts, such as <i>disgusting</i> or <i>honest</i>, based on quantitative corpus linguistics. This article builds on prior work in experimental philosophy which has shown that sentiment analysis can be used to track differences between concept classes. Specifically, this study investigates whether the relationship between sentiment and evaluativeness is more aptly captured by a linear or a higher degree parabolic function. It also shows that adjectives attributed to animate entities (e.g. "<i>generous</i> customer") generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g. "<i>dry</i> soil"). Overall, these classifiers offer new avenues for the empirical classification of evaluative concepts.
       - layout: left
         title: Tracing Thick Concepts Through Corpora
         caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
