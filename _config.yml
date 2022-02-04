@@ -67,9 +67,9 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         description: | # this will include new lines to allow paragraph
-          Normative generics, such as the rebuke "Girls don't play football.", are ubiquitous in everyday language. But what exactly makes them normative? A popular explanation highlights the role of Dual Character Concepts (DCCs). However, while the DCC framework works well for lexical norms in social kind-generics, it cannot account for context-dependent normative interpretations of generics. This paper shows that the conditions for dual character norms can be generalized from concepts to expressions (DCEs) in order to eliminate this blind-spot. Instead of focusing on explanations limited to social kinds (e.g. idealized social functions), I suggest an approach based on linguistic features, namely definitional generics, and specific inference patterns. From this analysis, we learn that dual character is not restricted to certain social and artifact kinds, but can also occur <i>ad hoc</i>. As long as the stage is set right, we can formulate dual character norms about almost any kind-property relation. My considerations thus offer a new explanatory framework for both normative generics and DCCs more generally, and ultimately question the centrality of <i>lexical</i> norms.
+          Normative generics, such as the rebuke <q>Girls don't play football.</q>, are ubiquitous in everyday language. But what exactly makes them normative? A popular explanation highlights the role of Dual Character Concepts (DCCs). However, while the DCC framework works well for lexical norms in social kind-generics, it cannot account for context-dependent normative interpretations of generics. This paper shows that the conditions for dual character norms can be generalized from concepts to expressions (DCEs) in order to eliminate this blind-spot. Instead of focusing on explanations limited to social kinds (e.g. idealized social functions), I suggest an approach based on linguistic features, namely definitional generics, and specific inference patterns. From this analysis, we learn that dual character is not restricted to certain social and artifact kinds, but can also occur <i>ad hoc</i>. As long as the stage is set right, we can formulate dual character norms about almost any kind-property relation. My considerations thus offer a new explanatory framework for both normative generics and DCCs more generally, and ultimately question the centrality of <i>lexical</i> norms.
       - layout: left
-        title: "Could I be a giraffe?": Figurative Elements in Dual Character Classifications
+        title: <q>Could I be a giraffe</q> &#8212; Figurative Elements in Dual Character Classifications
         caption: single author
         description: |
           Dual character concepts like <i>artist</i> or <i>magician</i> have a descriptive and normative dimension, which are considered to be independent of each other. Their normative dimension is generally assumed to be univocal and only indicative of literal classifications. Contrary to this conception, I argue that dual character classifications include figurative elements. I suggest to conceptualize dual character classifications as a lexical-pragmatic process involving sense broadening and narrowing, rather than as a genuine natural kind. These processes include metaphor and hyperbole as forms of category extension. This ultimately means that normative dual character classifications are much more complex and widespread than accepted hitherto.
@@ -77,23 +77,27 @@ content:
         title: Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts
         caption: single author
         description: |
-          Many scholars suggest there to be different evaluative concept classes, namely thin and thick concepts. To this date, hardly any empirical evidence exists on how to distinguish these two classes. In this paper, I propose new empirical classifiers for evaluative concepts, such as <i>disgusting</i> or <i>honest</i>, based on quantitative corpus linguistics. This article builds on prior work in experimental philosophy which has shown that sentiment analysis can be used to track differences between concept classes. Specifically, this study investigates whether the relationship between sentiment and evaluativeness is more aptly captured by a linear or a higher degree parabolic function. It also shows that adjectives attributed to animate entities (e.g. "<i>generous</i> customer") generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g. "<i>dry</i> soil"). Overall, these classifiers offer new avenues for the empirical classification of evaluative concepts.
+          Many scholars suggest there to be different evaluative concept classes, namely thin and thick concepts. To this date, hardly any empirical evidence exists on how to distinguish these two classes. In this paper, I propose new empirical classifiers for evaluative concepts, such as <i>disgusting</i> or <i>honest</i>, based on quantitative corpus linguistics. This article builds on prior work in experimental philosophy which has shown that sentiment analysis can be used to track differences between concept classes. Specifically, this study investigates whether the relationship between sentiment and evaluativeness is more aptly captured by a linear or a higher degree parabolic function. It also shows that adjectives attributed to animate entities (e.g. <q><i>generous</i> customer</q>) generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g. <q><i>dry</i> soil</q>). Overall, these classifiers offer new avenues for the empirical classification of evaluative concepts.
       - layout: left
-        title: Tracing Thick Concepts Through Corpora
+        title: The Polarity Effect of Evaluative Language
+        caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
+        link: http://philsci-archive.pitt.edu/20146/
+        link_text: Preprint
+        description: |
+          Recent research on thick terms like 'rude' and 'friendly' has revealed a polarity effect, according to which the evaluative content of positive thick terms like 'friendly' and 'courageous' can be more easily cancelled than the evaluative content of negative terms like 'rude' and 'selfish'. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as 'good' or 'bad' (Study 2). We conclude that the polarity effect is indicative of a pervasive linguistic asymmetry that holds between positive and negative evaluative terms.
+      - layout: left
+        title: Tracing Thick and Thin Concepts Through Corpora
         caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
         description: |
-          Philosophers and linguists currently lack the means to reliably identify evaluative concepts and to measure these concepts'
-          evaluative intensity. Using a corpus-based approach, we present two new methods that allow us to distinguish evaluatively thick
-          adjectives like 'courageous' from descriptive adjectives like 'tall', and from value-associated adjectives like 'sunny'.
+          Philosophers and linguists currently lack the means to reliably identify evaluative concepts and to measure their evaluative intensity. Using a corpusbased approach, we present a new method to distinguish evaluatively thick
+          adjectives like 'courageous' from descriptive adjectives like 'narrow', and from value-associated adjectives like 'sunny'. Our study reveals that the modifiers 'truly' and 'really' frequently highlight the evaluative dimension of thick and thin adjectives, allowing for them to be uniquely classified. Based on these results, we believe the operationalization we suggest may pave the way for a more quantitative approach to the study of thick and thin concepts.
       - layout: left
-        title: Examining Evaluativity in Legal Discourse
+        title: Examining evaluativity in legal discourse&#x3a; A comparative corpus-linguistic study of thick concepts
         caption: with<br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a><br>Severin Frohofer<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a>
-        #link: github.com/sproogen
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        link: https://www.zora.uzh.ch/id/eprint/208235/
+        link_text: Preprint
         description: |
-          How evaluative are legal texts? Do legal professionals speak a more descriptive or perhaps a more evaluative language? In this paper, we present the results of a corpus study in which we examined the use of evaluative language in both the legal domain as well as public discourse.
+          How evaluative are legal texts? Do legal scholars and jurists speak a more descriptive or perhaps a more evaluative language? In this paper, we present the results of a corpus study in which we examined the use of evaluative language in both the legal domain as well as public discourse. For this purpose, we created two corpora. Our legal professional corpus is based on court opinions from the U.S. Courts of Appeals. We compared this professional corpus to a public corpus, which is based on blog discussions on the internet forum Reddit. While many linguistic phenomena can give insights into evaluativity, we investigated the use of a wide selection of evaluative adjectives (more specifically, thick adjectives) to gain a more comprehensive picture of the degree of evaluativity in the legal domain. Our analysis shows that legal professionals use thick terms less evaluatively than laypeople, which suggests that legal texts are less evaluative than ordinary discussions. This result, more generally, supports the philosophical idea that thick concepts may vary in their evaluative intensity.
 
   - title: Coding Projects
     layout: list
@@ -195,6 +199,16 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Contemporary Semantics and Pragmatics
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        #sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
+        caption: February 2022 - May 2022
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          Semantics and pragmatics are two different ways to think about language. Semantics is concerned with what we say and what makes the proposition true, whereas pragmatics focuses on how we say things and how context affects the meaning of the utterance. Sometimes «I'm so thirsty.» doesn't just declare one's personal state but implies the question «Would you mind giving me some of your water?» But how so?<br>In this course, we will take a look at the current theories in the philosophy of language and how they explain our use of everyday language. The phenomena we will cover include polysemy, implicatures, metaphors, vague expressions, and how we communicate norms and evaluations. The course aims to give you an impression of today's theoretical conflicts in the philosophy of language as well as a better understanding of our daily communication.
+      - layout: left
         title: Normativity in Moral Language
         #link: boringcompany.com
         # link_text: boringcompany.com
@@ -203,7 +217,11 @@ content:
         #quote: >
         #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
-          This bachelor seminary focuses on the difference between evaluative and non-evaluative language, norm communication as well as normative conceptual engineering.
+          Suppose a good friend says the following thing to you: "What you did last night at the party was very rude." From this statement you probably understand that your friend considered your behaviour offensive, hurtful, or disrespectful. You might further understand that your friend disapproves of your behaviour and considers it wrong
+          for being offensive, hurtful, or disrespectful. Language can not only describe what the world is like, it can also
+          evaluate the world and express our approval or disapproval of other people and their behaviour. In this seminar we will deal with evaluative language, covering so- called thin terms, such as "good" and "bad",
+          thick terms, such as "rude", "cruel", "honest" and generous", and perjoratives and slurs. We will discuss how
+          normativity is realised in language and how we can use language to evaluate. We will look at both classical philosophical texts as well as recent empirical studies.
       - layout: left
         title: Data Journalism
         #link: boringcompany.com
