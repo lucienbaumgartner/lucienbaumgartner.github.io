@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Lucien Baumgartner
-title: PhD Candidate in Philosophy of Language
+title: PhD Student in Philosophy of Language
 email: lucien.baumgartner@philos.uzh.ch
 #website: www.lucienbaumgartner.github.io
 
@@ -48,7 +48,7 @@ github_username:  lucienbaumgartner
 # about_title: About Me
 about_profile_image: images/github-pic.png
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's <mark>Lucien</mark>! I'm a PhD candidate in the SNSF Eccellenza Team of Prof. Dr. Kevin Reuter, at the Department of Philosophy, University of Zurich. My research concerns normativity in language, and more specifically <mark>dual character concepts</mark> and <mark>normative generics</mark>. Most of my work is situated in <mark>theoretical philosophy</mark>, but it also profits from empirical work in experimental philsophy. I'm a well-versed <mark>data scientist</mark>, specialized in data acquisition and computational linguistics. The interdisciplinary character of my work offers new perspectives on perennial philosophical questions. It also allows for bottom-up approach to conceptual engineering, based on natural language data. And most importantly, <mark>it's fun</mark>!
+  Hi, my name's Lucien! I'm a PhD student at the Institute of Philosophy, University of Zurich, and part of the Eccellenza team of Prof. Kevin Reuter. I work primarily in experimental and theoretical philosophy of language. My research focuses on normative expressions in natural language, such as thick concepts, dual character concepts, and normative generics. I also work on integrating computational corpus analysis into experimental philosophy.
 
 content:
   - title: Research Papers # Title for the section
@@ -116,27 +116,124 @@ content:
         description: | # this will include new lines to allow paragraphs
           Voat was an American alt-tech news aggregator and social networking service, created in 2014 and  shut down on Christmas 2020. It was infamously known to be a home to hate speech, alt-right content, racism and misogyny. Due to its shutdown, the discourse on Voat is closed and sealed, and  thus constitutes an important artifact for the research on hate speech. As an effort to make Voat-data easily and openly available for research, I'm creating a comprehensive Voat-corpus along with a preliminary analysis of its content.
 
-  - title: Talks 2021
+  - title: Organized Events
     layout: list
     content:
-      - layout: left
-        title: X-Phi Europe 2021
-        link: xphiprague.eu
-        caption: 06/17/2021
-        description: | # this will include new lines to allow paragraphs
-          "Tracing Thick Concepts Through Corpora".
-      - layout: left
-        title: X-Phi Europe 2021
-        link: xphiprague.eu
-        caption: 06/17/2021
-        description: | # this will include new lines to allow paragraphs
-          "Examining Evaluativity in Legal Discourse - A Comparative Corpus-Linguistic Study of Thick Concepts" with Severin Frohofer.
-      - layout: left
+      - layout: top
+        title: Conference on Dual Character Concepts, Normative Generics, and Evaluative Language
+        link: sites.google.com/evaluativelanguage
+        url: https://sites.google.com/view/evaluativelanguage/
+        caption: 06/16/2022-06/18/2022
+      - layout: top
         title: Corpus Linguistics and Philosophy Workshop 2021
         link: lucienbaumgartner.github.io/coliphi21/
         caption: 06/10/2021-06/12/2021
+
+  - title: Talks
+    layout: list
+    content:
+      - layout: top
+        title: COGSCI 2022 || <span class="talktitle">Talk &#8212; The Polarity Effect of Evaluative Language
+        link: cognitivesciencesociety.org/cogsci-2022/
+        url: https://cognitivesciencesociety.org/cogsci-2022/
+        caption: 07/27/2022-07/30/2022
+      - layout: top
+        title: COGSCI 2022 || <span class="talktitle">Flash Talk &#8212; Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts.</span>
+        link: cognitivesciencesociety.org/cogsci-2022/
+        url: https://cognitivesciencesociety.org/cogsci-2022/
+        caption: 07/27/2022-07/30/2022
+      - layout: top
+        title: ESPP & SPP 2022 || <span class="talktitle">Talk &#8212; Figurative Dual Character Classifications
+        link: espp-spp-2022.com
+        url: https://espp-spp-2022.com/
+        caption: 07/19/2022-07/22/2022
+      - layout: top
+        title: Conference on Dual Character Concepts, Normative Generics, and Evaluative Language || <span class="talktitle">Talk &#8212; Dual Character <span class="strikethrough">Concepts</span> Classifications  Can Dual Character Be Reduced to Double-Dissociation?</span>
+        link: sites.google.com/evaluativelanguage
+        url: https://sites.google.com/view/evaluativelanguage/
+        caption: 06/16/2022-06/18/2022
+      - layout: top
+        title: X-Phi Europe 2021 || <span class="talktitle">Talk &#8212; Tracing Thick Concepts Through Corpora</span>
+        link: xphiprague.eu
+        caption: 06/17/2021
+      - layout: top
+        title: X-Phi Europe 2021 || <span class="talktitle">Talk &#8212; Examining Evaluativity in Legal Discourse - A Comparative Corpus-Linguistic Study of Thick Concepts" with Severin Frohofer</span>
+        link: xphiprague.eu
+        caption: 06/17/2021
+      - layout: top
+        title: Corpus Linguistics and Philosophy Workshop 2021 || <span class="talktitle">Talk &#8212; Teaching the basics of corpus linguistics and web scraping</span>
+        link: lucienbaumgartner.github.io/coliphi21/
+        caption: 06/10/2021-06/12/2021
+
+  - title: Teaching # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Contemporary Semantics and Pragmatics
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        #sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
+        caption: February 2022 - May 2022
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
-          Teaching the basics of corpus linguistics and web scraping.
+          Semantics and pragmatics are two different ways to think about language. Semantics is concerned with what we say and what makes the proposition true, whereas pragmatics focuses on how we say things and how context affects the meaning of the utterance. Sometimes «I'm so thirsty.» doesn't just declare one's personal state but implies the question «Would you mind giving me some of your water?» But how so?<br>In this course, we will take a look at the current theories in the philosophy of language and how they explain our use of everyday language. The phenomena we will cover include polysemy, implicatures, metaphors, vague expressions, and how we communicate norms and evaluations. The course aims to give you an impression of today's theoretical conflicts in the philosophy of language as well as a better understanding of our daily communication.
+      - layout: left
+        title: Normativity in Moral Language
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
+        caption: February 2021 - May 2021
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          Suppose a good friend says the following thing to you: "What you did last night at the party was very rude." From this statement you probably understand that your friend considered your behaviour offensive, hurtful, or disrespectful. You might further understand that your friend disapproves of your behaviour and considers it wrong
+          for being offensive, hurtful, or disrespectful. Language can not only describe what the world is like, it can also
+          evaluate the world and express our approval or disapproval of other people and their behaviour. In this seminar we will deal with evaluative language, covering so- called thin terms, such as "good" and "bad",
+          thick terms, such as "rude", "cruel", "honest" and generous", and perjoratives and slurs. We will discuss how
+          normativity is realised in language and how we can use language to evaluate. We will look at both classical philosophical texts as well as recent empirical studies.
+      #- layout: left
+        #title: Data Journalism
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        #sub_title: Tutor for <a class="colleagues" href="https://www.fabriziogilardi.org/">Prof. Dr. Fabrizio Gilardi</a>
+        #caption: September 2018 - December 2018
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        #description: | # this will include new lines to allow paragraphs
+        #  The aim of this master seminary is for students to get acquainted with text analysis in R, vizulations and communication of results for a wider audience.
+      #- layout: left
+      #  title: History of Political Thought - Machiavelli
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+      #  sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.ch/artikel/urs-marti-brander">Prof. Dr. em. Urs Marti-Brander</a>
+      #  caption: September 2015 - June 2016
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+      #  description: | # this will include new lines to allow paragraphs
+      #    For this bachelor seminary, we read Machiavelli's Il Principe and Discorsi, with a special focus on the relation of author and text.
+      #- layout: left
+        #title: Introduction to Political Philosophy
+        #link: boringcompany.com
+        # link_text: boringcompany.com
+        #sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.uzh.ch/en/seminar/people/seminar_head/cheneval.html">Prof. Dr Francis Cheneval</a>
+        #caption: September 2015 - December 2015
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        #description: | # this will include new lines to allow paragraphs
+        #  This lecture for bachelor students gives an overview of the history of thought in poltical philosophy.
+
+  - title: Attended Workshops
+    layout: list
+    content:
+      - layout: top
+        title: Summer School on Conceptual Engineering, Experimental Methods, and Politically Correct Language
+        link: University of Zurich
+        caption: 07/04/2022-07/08/2022
+      - layout: top
+        title: Summer School of the Digital Society Initiative
+        link: university of Zurich
+        caption: 06/26/2022-06/30/2022
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -195,63 +292,6 @@ content:
         description: | # this will include new lines to allow paragraphs
           Data-driven journalism has become mainstay for open source and accountable news reporting in the age of fake news. The NZZ has a young and engaged team that focuses on long-format analyses and background articles as live monitoring of events. As an intern, I co-organized the coverage 2017 German Bundestagswahl, and wrote articles about various topics, such as the legalization of marijuana in the US, or the most controversial movies of all time.
 
-  - title: Teaching # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Contemporary Semantics and Pragmatics
-        #link: boringcompany.com
-        # link_text: boringcompany.com
-        #sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
-        caption: February 2022 - May 2022
-        #quote: >
-        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-          Semantics and pragmatics are two different ways to think about language. Semantics is concerned with what we say and what makes the proposition true, whereas pragmatics focuses on how we say things and how context affects the meaning of the utterance. Sometimes «I'm so thirsty.» doesn't just declare one's personal state but implies the question «Would you mind giving me some of your water?» But how so?<br>In this course, we will take a look at the current theories in the philosophy of language and how they explain our use of everyday language. The phenomena we will cover include polysemy, implicatures, metaphors, vague expressions, and how we communicate norms and evaluations. The course aims to give you an impression of today's theoretical conflicts in the philosophy of language as well as a better understanding of our daily communication.
-      - layout: left
-        title: Normativity in Moral Language
-        #link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: co-taught with <a class="colleagues" href="https://www.pascalewillemsen.com/">Dr. Pascale Willemsen</a>
-        caption: February 2021 - May 2021
-        #quote: >
-        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-          Suppose a good friend says the following thing to you: "What you did last night at the party was very rude." From this statement you probably understand that your friend considered your behaviour offensive, hurtful, or disrespectful. You might further understand that your friend disapproves of your behaviour and considers it wrong
-          for being offensive, hurtful, or disrespectful. Language can not only describe what the world is like, it can also
-          evaluate the world and express our approval or disapproval of other people and their behaviour. In this seminar we will deal with evaluative language, covering so- called thin terms, such as "good" and "bad",
-          thick terms, such as "rude", "cruel", "honest" and generous", and perjoratives and slurs. We will discuss how
-          normativity is realised in language and how we can use language to evaluate. We will look at both classical philosophical texts as well as recent empirical studies.
-      - layout: left
-        title: Data Journalism
-        #link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Tutor for <a class="colleagues" href="https://www.fabriziogilardi.org/">Prof. Dr. Fabrizio Gilardi</a>
-        caption: September 2018 - December 2018
-        #quote: >
-        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-          The aim of this master seminary is for students to get acquainted with text analysis in R, vizulations and communication of results for a wider audience.
-      - layout: left
-        title: History of Political Thought - Machiavelli
-        #link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.ch/artikel/urs-marti-brander">Prof. Dr. em. Urs Marti-Brander</a>
-        caption: September 2015 - June 2016
-        #quote: >
-        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-          For this bachelor seminary, we read Machiavelli's Il Principe and Discorsi, with a special focus on the relation of author and text.
-      - layout: left
-        title: Introduction to Political Philosophy
-        #link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Tutor for <a class="colleagues" href="https://www.philosophie.uzh.ch/en/seminar/people/seminar_head/cheneval.html">Prof. Dr Francis Cheneval</a>
-        caption: September 2015 - December 2015
-        #quote: >
-        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-          This lecture for bachelor students gives an overview of the history of thought in poltical philosophy.
 #  - title: A Little More About Me
 #    layout: text
 #    content: | # this will include new lines to allow paragraphs
