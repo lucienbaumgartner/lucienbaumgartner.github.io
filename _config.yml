@@ -55,11 +55,29 @@ content:
     layout: list
     content:
       - layout: top
+        title: Baumgartner, L., Willemsen, P., and Reuter, K. (2022)&#58; The polarity effect of evaluative language. <em>Philosophical Psychology</em>, 1-18.
+        link: https://www.tandfonline.com/doi/full/10.1080/09515089.2022.2123311
+        link_text: Open access
+        description: |
+          Recent research on thick terms like “rude” and “friendly” has revealed a polarity effect, according to which the evaluative content of positive thick terms like “friendly” and “courageous” can be more easily canceled than the evaluative content of negative terms like “rude” and “selfish”. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as “good” or “bad” (Study 2). We conclude that the polarity effect indicates a pervasive asymmetry between positive and negative evaluative terms.
+      - layout: top
         title: Baumgartner, L. (2022)&#58; Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts. <em>Proceedings of the Annual Meeting of the Cognitive Science Society </em>, 44.
         link: https://escholarship.org/uc/item/0h97049x
         link_text: Open access
         description: |
-          This paper proposes new empirical classifiers for evaluative concepts, including thin concepts like 'good' or 'bad' and thick concepts such as 'honest' or 'disgusting', based on quantitative corpus linguistics. Prior work in experimental philosophy has shown that sentiment analysis can be used to track differences between concept classes. Building on this, Task 1 investigates whether the relationship between sentiment and evaluativeness is parabolic rather than linear. Task 2 extends this question to the differences between evaluative and non-evaluative concept classes. The results of both Tasks show that the linear and the parabolic logistic regression classifiers perform equally well. Interestingly, this study also finds that adjectives attributed to animate entities (e.g. "generous customer") generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g."dry soil").
+          This paper proposes new empirical classifiers for evaluative concepts, including thin concepts like ‘good’ or ‘bad’ and thick concepts such as ‘honest’ or ‘disgusting’, based on quantitative corpus linguistics. Prior work in experimental philosophy has shown that sentiment analysis can be used to track differences between concept classes. Building on this, Task 1 investigates whether the relationship between sentiment and evaluativeness is parabolic rather than linear. Task 2 extends this question to the differences between evaluative and non-evaluative concept classes. The results of both Tasks show that the linear and the parabolic logistic regression classifiers perform equally well. Interestingly, this study also finds that adjectives attributed to animate entities (e.g. “generous customer”) generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g.“dry soil”).
+      - layout: top
+        title: Baumgartner, L., Willemsen, P., and Reuter, K. (2022)&#58; The polarity effect of evaluative language.
+        link: https://escholarship.org/uc/item/12d2x8vp
+        link_text: Open access
+        description: |
+          Recent research on thick terms like ‘rude’ and ‘friendly’ has revealed a polarity effect, according to which the evaluative content of positive thick terms like ‘friendly’ and ‘courageous’ can be more easily cancelled than the evaluative content of negative terms like ‘rude’ and ‘selfish’. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as ‘good’ or ‘bad’ (Study 2). We conclude that the polarity effect is indicative of a pervasive asymmetry that holds between positive and negative evaluative terms.
+      - layout: top
+        title: Willemsen, P., Baumgartner, L., Frohofer, S., and Reuter, K. (forthcoming)&#58; Examining evaluativity in legal discourse&#58; A comparative corpus-linguistic study of thick concepts. In Magen, S., Prochownik, K. (Eds.) <em>Advances in Experi-mental Philosophy of Law</em>.
+        link: https://www.zora.uzh.ch/id/eprint/208235/
+        link_text: Preprint
+        description: |
+          How evaluative are legal texts? Do legal scholars and jurists speak a more descriptive or perhaps a more evaluative language? In this paper, we present the results of a corpus study in which we examined the use of evaluative language in both the legal domain as well as public discourse. For this purpose, we created two corpora. Our legal professional corpus is based on court opinions from the U.S. Courts of Appeals. We compared this professional corpus to a public corpus, which is based on blog discussions on the internet forum Reddit. While many linguistic phenomena can give insights into evaluativity, we investigated the use of a wide selection of evaluative adjectives (more specifically, thick adjectives) to gain a more comprehensive picture of the degree of evaluativity in the legal domain. Our analysis shows that legal professionals use thick terms less evaluatively than laypeople, which suggests that legal texts are less evaluative than ordinary discussions. This result, more generally, supports the philosophical idea that thick concepts may vary in their evaluative intensity.
   - title: Research Papers # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -83,30 +101,11 @@ content:
         description: |
           Dual character concepts like <i>artist</i> or <i>magician</i> have a descriptive and normative dimension, which are considered to be independent of each other. Their normative dimension is generally assumed to be univocal and only indicative of literal classifications. Contrary to this conception, I argue that dual character classifications include figurative elements. I suggest to conceptualize dual character classifications as a lexical-pragmatic process involving sense broadening and narrowing, rather than as a genuine natural kind. These processes include metaphor and hyperbole as forms of category extension. This ultimately means that normative dual character classifications are much more complex and widespread than accepted hitherto.
       - layout: left
-        title: Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts
-        caption: single author
-        description: |
-          Many scholars suggest there to be different evaluative concept classes, namely thin and thick concepts. To this date, hardly any empirical evidence exists on how to distinguish these two classes. In this paper, I propose new empirical classifiers for evaluative concepts, such as <i>disgusting</i> or <i>honest</i>, based on quantitative corpus linguistics. This article builds on prior work in experimental philosophy which has shown that sentiment analysis can be used to track differences between concept classes. Specifically, this study investigates whether the relationship between sentiment and evaluativeness is more aptly captured by a linear or a higher degree parabolic function. It also shows that adjectives attributed to animate entities (e.g. <q><i>generous</i> customer</q>) generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g. <q><i>dry</i> soil</q>). Overall, these classifiers offer new avenues for the empirical classification of evaluative concepts.
-      - layout: left
-        title: The Polarity Effect of Evaluative Language
-        caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
-        link: http://philsci-archive.pitt.edu/20146/
-        link_text: Preprint
-        description: |
-          Recent research on thick terms like 'rude' and 'friendly' has revealed a polarity effect, according to which the evaluative content of positive thick terms like 'friendly' and 'courageous' can be more easily cancelled than the evaluative content of negative terms like 'rude' and 'selfish'. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as 'good' or 'bad' (Study 2). We conclude that the polarity effect is indicative of a pervasive linguistic asymmetry that holds between positive and negative evaluative terms.
-      - layout: left
         title: Tracing Thick and Thin Concepts Through Corpora
         caption: with<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a><br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a>
         description: |
           Philosophers and linguists currently lack the means to reliably identify evaluative concepts and to measure their evaluative intensity. Using a corpusbased approach, we present a new method to distinguish evaluatively thick
           adjectives like 'courageous' from descriptive adjectives like 'narrow', and from value-associated adjectives like 'sunny'. Our study reveals that the modifiers 'truly' and 'really' frequently highlight the evaluative dimension of thick and thin adjectives, allowing for them to be uniquely classified. Based on these results, we believe the operationalization we suggest may pave the way for a more quantitative approach to the study of thick and thin concepts.
-      - layout: left
-        title: Examining evaluativity in legal discourse&#x3a; A comparative corpus-linguistic study of thick concepts
-        caption: with<br><a class="coAuthors" href="https://www.pascalewillemsen.com/">Pascale Willemsen</a><br>Severin Frohofer<br><a class="coAuthors" href="http://www.kevinreuter.com/">Kevin Reuter</a>
-        link: https://www.zora.uzh.ch/id/eprint/208235/
-        link_text: Preprint
-        description: |
-          How evaluative are legal texts? Do legal scholars and jurists speak a more descriptive or perhaps a more evaluative language? In this paper, we present the results of a corpus study in which we examined the use of evaluative language in both the legal domain as well as public discourse. For this purpose, we created two corpora. Our legal professional corpus is based on court opinions from the U.S. Courts of Appeals. We compared this professional corpus to a public corpus, which is based on blog discussions on the internet forum Reddit. While many linguistic phenomena can give insights into evaluativity, we investigated the use of a wide selection of evaluative adjectives (more specifically, thick adjectives) to gain a more comprehensive picture of the degree of evaluativity in the legal domain. Our analysis shows that legal professionals use thick terms less evaluatively than laypeople, which suggests that legal texts are less evaluative than ordinary discussions. This result, more generally, supports the philosophical idea that thick concepts may vary in their evaluative intensity.
 
   - title: Coding Projects
     layout: list
@@ -141,6 +140,16 @@ content:
   - title: Talks
     layout: list
     content:
+      - layout: top
+        title: PLM 6 || <span class="talktitle">Talk &#8212; Pragmatic Dual Character Classifications
+        link: plm6.filozofia.uw.edu.pl/
+        url: https://plm6.filozofia.uw.edu.pl/
+        caption: 09/15/2022-09/17/2022
+      - layout: top
+        title: X-Phi Europe 2022 || <span class="talktitle">Talk &#8212; How to classify evaluative concepts
+        link: xphieurope2022.weebly.com/
+        url: https://xphieurope2022.weebly.com/
+        caption: 09/08/2022-09/10/2022
       - layout: top
         title: COGSCI 2022 || <span class="talktitle">Talk &#8212; The Polarity Effect of Evaluative Language
         link: cognitivesciencesociety.org/cogsci-2022/
