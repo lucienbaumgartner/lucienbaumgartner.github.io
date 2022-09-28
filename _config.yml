@@ -51,6 +51,15 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Lucien! I'm a PhD student at the Institute of Philosophy, University of Zurich, and part of the Eccellenza team of Prof. Kevin Reuter. I work primarily in experimental and theoretical philosophy of language. My research focuses on normative expressions in natural language, such as thick concepts, dual character concepts, and normative generics. I also work on integrating computational corpus analysis into experimental philosophy.
 
 content:
+  - title: Publications
+    layout: list
+    content:
+      - layout: left
+        title: Baumgartner, L. (2022) -- Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts. <em>Proceedings of the Annual Meeting of the Cognitive Science Society </em>, 44.
+        link: http://philsci-archive.pitt.edu/20146/
+        link_text: Open access
+        description: |
+          This paper proposes new empirical classifiers for evaluative concepts, including thin concepts like 'good' or 'bad' and thick concepts such as 'honest' or 'disgusting', based on quantitative corpus linguistics. Prior work in experimental philosophy has shown that sentiment analysis can be used to track differences between concept classes. Building on this, Task 1 investigates whether the relationship between sentiment and evaluativeness is parabolic rather than linear. Task 2 extends this question to the differences between evaluative and non-evaluative concept classes. The results of both Tasks show that the linear and the parabolic logistic regression classifiers perform equally well. Interestingly, this study also finds that adjectives attributed to animate entities (e.g. "generous customer") generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g."dry soil").
   - title: Research Papers # Title for the section
     layout: list # Type of content section (list/text)
     content:
