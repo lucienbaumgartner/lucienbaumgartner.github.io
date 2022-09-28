@@ -61,19 +61,19 @@ content:
         description: |
           Recent research on thick terms like “rude” and “friendly” has revealed a polarity effect, according to which the evaluative content of positive thick terms like “friendly” and “courageous” can be more easily canceled than the evaluative content of negative terms like “rude” and “selfish”. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as “good” or “bad” (Study 2). We conclude that the polarity effect indicates a pervasive asymmetry between positive and negative evaluative terms.
       - layout: top
-        title: Baumgartner, L. (2022)&#58; Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts. <em>Proceedings of the Annual Meeting of the Cognitive Science Society </em>, 44.
+        title: Baumgartner, L. (2022)&#58; Why are reckless socks not (more of) a thing? Towards an empirical classification of evaluative concepts. <em>Proceedings of the Annual Meeting of the Cognitive Science Society </em>, 44, pp. 2869-2875.
         link: https://escholarship.org/uc/item/0h97049x
         link_text: Open access
         description: |
           This paper proposes new empirical classifiers for evaluative concepts, including thin concepts like ‘good’ or ‘bad’ and thick concepts such as ‘honest’ or ‘disgusting’, based on quantitative corpus linguistics. Prior work in experimental philosophy has shown that sentiment analysis can be used to track differences between concept classes. Building on this, Task 1 investigates whether the relationship between sentiment and evaluativeness is parabolic rather than linear. Task 2 extends this question to the differences between evaluative and non-evaluative concept classes. The results of both Tasks show that the linear and the parabolic logistic regression classifiers perform equally well. Interestingly, this study also finds that adjectives attributed to animate entities (e.g. “generous customer”) generally have a higher probability to be evaluative concepts than those attributed to inanimate entities (e.g.“dry soil”).
       - layout: top
-        title: Baumgartner, L., Willemsen, P., and Reuter, K. (2022)&#58; The polarity effect of evaluative language.
+        title: Baumgartner, L., Willemsen, P., and Reuter, K. (2022)&#58; The polarity effect of evaluative language. <em>Proceedings of the Annual Meeting of the Cognitive Science Society </em>, 44, pp. 729-735.
         link: https://escholarship.org/uc/item/12d2x8vp
         link_text: Open access
         description: |
           Recent research on thick terms like ‘rude’ and ‘friendly’ has revealed a polarity effect, according to which the evaluative content of positive thick terms like ‘friendly’ and ‘courageous’ can be more easily cancelled than the evaluative content of negative terms like ‘rude’ and ‘selfish’. In this paper, we study the polarity effect in greater detail. We first demonstrate that the polarity effect is insensitive to manipulations of embeddings (Study 1). Second, we show that the effect occurs not only for thick terms but also for thin terms such as ‘good’ or ‘bad’ (Study 2). We conclude that the polarity effect is indicative of a pervasive asymmetry that holds between positive and negative evaluative terms.
       - layout: top
-        title: Willemsen, P., Baumgartner, L., Frohofer, S., and Reuter, K. (forthcoming)&#58; Examining evaluativity in legal discourse&#58; A comparative corpus-linguistic study of thick concepts. In Magen, S., Prochownik, K. (Eds.) <em>Advances in Experi-mental Philosophy of Law</em>.
+        title: Willemsen, P., Baumgartner, L., Frohofer, S., and Reuter, K. (forthcoming)&#58; Examining evaluativity in legal discourse&#58; A comparative corpus-linguistic study of thick concepts. In Magen, S., Prochownik, K. (Eds.) <em>Advances in Experimental Philosophy of Law</em>.
         link: https://www.zora.uzh.ch/id/eprint/208235/
         link_text: Preprint
         description: |
