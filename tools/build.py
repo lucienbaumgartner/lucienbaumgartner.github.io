@@ -11,6 +11,12 @@ HEAD = '''<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{desc}">
+  <link rel="canonical" href="{canonical}">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{desc}">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -57,9 +63,17 @@ FOOT = '''
 '''
 
 index = HEAD.format(
-    title='Lucien Baumgartner',
+    title='Lucien Baumgartner | Philosophy of Language and Mind | University of Zurich',
+    canonical='https://lucienbaumgartner.github.io/',
     desc='Lucien Baumgartner, philosopher working on philosophy of language and mind, concepts and evaluative language, with experimental and computational methods.'
-) + topbar('', 'home') + '''
+) + '''<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Person", "name": "Lucien Baumgartner",
+ "url": "https://lucienbaumgartner.github.io/", "jobTitle": "Postdoctoral Researcher",
+ "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Zurich"},
+ "knowsAbout": ["Philosophy of language", "Philosophy of mind", "Experimental philosophy", "Computational linguistics"],
+ "sameAs": ["https://orcid.org/0000-0003-1698-0114", "https://www.semanticscholar.org/author/L.-Baumgartner/2135114773", "https://www.github.com/lucienbaumgartner"]}
+</script>
+''' + topbar('', 'home') + '''
 <main class="wrap">
 
   <section id="about" class="hero">
@@ -91,6 +105,7 @@ index = HEAD.format(
 
 project = HEAD.format(
     title='Cognitive Chimeras | SNSF Ambizione Project | Lucien Baumgartner',
+    canonical='https://lucienbaumgartner.github.io/ambizione.html',
     desc='SNSF Ambizione project Cognitive Chimeras: The Dynamics of Category Extension in the Hierarchy of Concepts, University of Neuchâtel, 2027–2031.'
 ) + topbar('index.html', 'project') + '''
 <main class="wrap">
